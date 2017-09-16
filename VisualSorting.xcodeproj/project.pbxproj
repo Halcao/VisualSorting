@@ -23,20 +23,23 @@
 
 /* Begin PBXBuildFile section */
 		11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 11F76B65BE080190A4D69131 /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
+		1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 011543DD36F78B4000FBAB3C /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		31F5EE318CBBDCCACCCA3491 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */; };
-		36F80CCA1F66CB52005CD1B2 /* Sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 36F80CC81F66CB52005CD1B2 /* Sorter.cpp */; };
-		36F80CCD1F66CBF7005CD1B2 /* SorterFactory.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 36F80CCB1F66CBF7005CD1B2 /* SorterFactory.cpp */; };
+		5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 774A533A100DCD37D8D9562D /* sorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A756C037F21AC304DE015D6 /* bubblesorter.cpp */; settings = {ATTRIBUTES = (); }; };
 		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
 		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
 		9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 29CD04F802630A54ABBFAE7F /* QtGui.framework */; };
 		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
 		B537134372803027546F936E /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 26FB077F01E285C42AEF1627 /* QtWidgets.framework */; };
+		BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6DA2D93DDDA677342902519D /* sorterfactory.cpp */; settings = {ATTRIBUTES = (); }; };
 		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36F80CC71F66CB38005CD1B2 /* PBXContainerItemProxy */ = {
+		36EFD4AD1F6D8923008D2C4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -65,16 +68,21 @@
 		26FB077F01E285C42AEF1627 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
 		29CD04F802630A54ABBFAE7F /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework; sourceTree = "<absolute>"; };
 		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
-		36F80CC81F66CB52005CD1B2 /* Sorter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sorter.cpp; sourceTree = "<group>"; };
-		36F80CC91F66CB52005CD1B2 /* Sorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sorter.h; sourceTree = "<group>"; };
-		36F80CCB1F66CBF7005CD1B2 /* SorterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SorterFactory.cpp; sourceTree = "<group>"; };
-		36F80CCC1F66CBF7005CD1B2 /* SorterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SorterFactory.h; sourceTree = "<group>"; };
+		3A756C037F21AC304DE015D6 /* bubblesorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bubblesorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp"; sourceTree = "<absolute>"; };
+		51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_mainwindow.cpp"; sourceTree = "<absolute>"; };
+		5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.cpp"; sourceTree = "<absolute>"; };
+		62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorterfactory.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.h"; sourceTree = "<absolute>"; };
+		6DA2D93DDDA677342902519D /* sorterfactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorterfactory.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.cpp"; sourceTree = "<absolute>"; };
+		774A533A100DCD37D8D9562D /* sorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.cpp"; sourceTree = "<absolute>"; };
 		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		9E1BB919E5247FA4E4B91039 /* VisualSorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualSorting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bubblesorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h"; sourceTree = "<absolute>"; };
 		D09DA6FBF2253E805C8FBB17 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/.qmake.stash"; sourceTree = "<absolute>"; };
 		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D51401F310A9A8B9CD7A71F1 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h"; sourceTree = "<absolute>"; };
 		F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		FAA80243D4BCDE38A456E040 /* sorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.h"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3A756C037F21AC304DE015D6 /* bubblesorter.cpp */,
 				011543DD36F78B4000FBAB3C /* main.cpp */,
-				36F80CC81F66CB52005CD1B2 /* Sorter.cpp */,
-				36F80CC91F66CB52005CD1B2 /* Sorter.h */,
-				36F80CCB1F66CBF7005CD1B2 /* SorterFactory.cpp */,
-				36F80CCC1F66CBF7005CD1B2 /* SorterFactory.h */,
+				5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */,
+				774A533A100DCD37D8D9562D /* sorter.cpp */,
+				6DA2D93DDDA677342902519D /* sorterfactory.cpp */,
+				C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */,
+				D51401F310A9A8B9CD7A71F1 /* mainwindow.h */,
+				FAA80243D4BCDE38A456E040 /* sorter.h */,
+				62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -143,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
 				74B182DB50CB5611B5C1C297 /* Supporting Files */,
 				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
 				AF39DD055C3EF8226FBE929D /* Frameworks */,
@@ -255,10 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */,
 				1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */,
-				36F80CCD1F66CBF7005CD1B2 /* SorterFactory.cpp in Compile Sources */,
+				1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */,
+				5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */,
+				DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */,
+				BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */,
 				11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */,
-				36F80CCA1F66CB52005CD1B2 /* Sorter.cpp in Compile Sources */,
 			);
 			name = "Compile Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +293,7 @@
 		938B64238DB76E298C94792E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 70E2801BAAC800E2BC18FF57 /* Qt Preprocess */;
-			targetProxy = 36F80CC71F66CB38005CD1B2 /* PBXContainerItemProxy */;
+			targetProxy = 36EFD4AD1F6D8923008D2C4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -325,7 +349,6 @@
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
 					"-stdlib=libc++",
-					"-O2",
 					"-std=gnu++11",
 					"-Wall",
 					"-W",
@@ -335,6 +358,7 @@
 					"-DQT_WIDGETS_LIB",
 					"-DQT_GUI_LIB",
 					"-DQT_CORE_LIB",
+					"-O2",
 				);
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",
@@ -402,7 +426,6 @@
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
 					"-stdlib=libc++",
-					"-O2",
 					"-std=gnu++11",
 					"-Wall",
 					"-W",
@@ -412,6 +435,7 @@
 					"-DQT_WIDGETS_LIB",
 					"-DQT_GUI_LIB",
 					"-DQT_CORE_LIB",
+					"-O2",
 				);
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",

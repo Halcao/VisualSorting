@@ -60,4 +60,53 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qhash.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qshareddata.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qshareddata.h \
+  mainwindow.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qwidget.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qmargins.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qrect.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpalette.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qcolor.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qrgb.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qrgba64.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qbrush.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qmatrix.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpolygon.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qregion.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qdatastream.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qiodevice.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qline.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtransform.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainterpath.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qimage.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpixelformat.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpixmap.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qfont.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qfontmetrics.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qfontinfo.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qsizepolicy.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qkeysequence.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QBoxLayout \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qlayout.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QPushButton \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QButtonGroup \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qbuttongroup.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QSlider \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qslider.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  sorterfactory.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/bubblesorter.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.h

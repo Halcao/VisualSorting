@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/Sorter.cpp \
-  Sorter.h
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.cpp \
+  sorter.h
