@@ -11,6 +11,9 @@ public:
     };
 //    string name = "QuickSort";
     virtual void sort();
+private:
+    int partition(int low, int high);
+    void quickSort(int low, int high);
 };
 
 #endif // QuickSORTER_H

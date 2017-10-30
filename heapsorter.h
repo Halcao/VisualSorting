@@ -11,6 +11,9 @@ public:
     };
 //    string name = "HeapSort";
     virtual void sort();
+private:
+    void AdjustDown(int i, int len);
+    void BuildMaxHeap(int len);
 };
 
 #endif // HeapSORTER_H

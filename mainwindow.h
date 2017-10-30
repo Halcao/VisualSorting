@@ -7,6 +7,7 @@
 #include <QButtonGroup>
 #include <QSlider>
 #include "sorterfactory.h"
+#include "painterpalette.h"
 
 class MainWindow: public QMainWindow {
     Q_OBJECT
@@ -27,6 +28,7 @@ public:
     QSlider *speedSlider;
     QButtonGroup *sizeGroup;
     QPushButton *restartButton;
+    PainterPalette *painterPalette;
     
 private:
     // generate random dataset

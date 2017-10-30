@@ -1,40 +1,43 @@
 #include "heapsorter.h"
 #include <iostream>
 
-void HeapSorter::sort() {
-    vector<int> a = array;
-    for (unsigned int i = 0; i < a.size(); i++) {
-        for (unsigned int j = 1; j < a.size() - i; j++) {
-            if (a[j-1] > a[j]) {
-                int tmp = a[j-1];
-                a[j-1] = a[j];
-                a[j] = tmp;
-                emit render1(j-1, j);
-            }
+void HeapSorter::AdjustDown(int i, int len)
+{
+    int temp = array[i];  // 暂存array[i]
+    
+    for(int largest=2*i+1; largest<len; largest=2*largest+1)
+    {
+        if(largest!=len-1 && array[largest+1]>array[largest])
+            ++largest;         // 如果右子结点大
+        if(temp < array[largest])
+        {
+            array[i] = array[largest];
+            emit render1(i, largest);
+            i = largest;         // 记录交换后的位置
         }
+        else
+            break;
     }
-    //    for(int i = 0; i < (int)size(); i++) {
-//        for (int j = 1; j < (int)size()-i; i++) {
-//            // if not sorting, stop it
-//            if (state == SortingStateNotSorting) {
-//                onStopSorting();
-//                return;
-//            }
-
-//            // flags to decide whether to swap or not
-////            bool ascendingNeedSwap = (array[j-1] > array[j]) && isAscending;
-////            bool descendingNeedSwap = (array[j-1] < array[j]) && !isAscending;
-////            if (ascendingNeedSwap || descendingNeedSwap) {
-//            if (array[j-1] > array[j]) {
-//                // swap to right order
-////                swap(array[j-1], array[j]);
-//                int tmp = array[j-1];
-//                array[j-1] = array[j];
-//                array[j] = tmp;
-//                // update UI
-////                render(j-1, j);
-//                emit render1(j-1, j);
-//            }
-//        }
-//    }
+    array[i] = temp;    // 被筛选结点的值放入最终位置
 }
+void HeapSorter::BuildMaxHeap(int len)
+{
+    for(int i=len/2-1; i>=0; --i)  // 从i=[n/2]~1，反复调整堆
+        AdjustDown(i, len);
+}
+
+void HeapSorter::sort() {
+    int n = (int)array.size();
+    BuildMaxHeap(n);       // 初始建堆
+    for(int i=n-1; i>0; --i)  // n-1趟的交换和建堆过程
+    {
+        // 输出最大的堆顶元素（和堆底元素交换）
+        array[0] = array[0]^array[i];
+        array[i] = array[0]^array[i];
+        array[0] = array[0]^array[i];
+        emit render1(i, 0);
+        // 调整，把剩余的n-1个元素整理成堆
+        AdjustDown(0, i);
+    }
+}
+

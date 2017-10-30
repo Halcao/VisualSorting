@@ -18,7 +18,7 @@ bottomLayout(new QHBoxLayout) {
     
     // initialize sorters
     sorters = {SorterFactory::getSorter("BubbleSort"), SorterFactory::getSorter("QuickSort"), SorterFactory::getSorter("HeapSort")};
-    
+    sorter = sorters[0];
     QHBoxLayout *topLayout = new QHBoxLayout;
     
     // prepare for various kind of buttons
@@ -42,15 +42,9 @@ bottomLayout(new QHBoxLayout) {
         // add to the group, add to layout
         sorterGroup->addButton(button);
         topLayout->addWidget(button);
-        
-//        topLayout->setStretchFactor(button, 1);
-//        sorter->render = [&](int i, int j) {
-//            this->swap(i, j);
-//        };
     }
     speedSlider->setOrientation(Qt::Horizontal);
     topLayout->addWidget(speedSlider);
-//    topLayout->setStretchFactor(speedSlider, 5);
     
     vector<int> sizeVec = {5, 10, 20, 50, 100, 150};
     for (auto size: sizeVec) {
@@ -80,6 +74,15 @@ bottomLayout(new QHBoxLayout) {
     mainLayout->addLayout(topLayout);
     mainLayout->addLayout(bottomLayout);
     
+//    QFrame *painterPanel = new QFrame;
+//    bottomLayout->addWidget(painterPanel);
+    painterPalette = new PainterPalette;
+    
+    painterPalette->dataSource = {14, 23, 34, 41, 15, 63, 7, 82, 39, 10};
+    bottomLayout->addWidget(painterPalette);
+
+    painterPalette->setMaximumSize(400, 400);
+    painterPalette->setMinimumSize(100, 100);
     // set central widget
     QWidget *centralWidget = new QWidget;
     centralWidget->setLayout(mainLayout);
@@ -111,76 +114,33 @@ void MainWindow::setSpeed(int speed) {
 }
 
 void MainWindow::setSize(int size) {
-    QLayoutItem *item;
-    while ((item = bottomLayout->takeAt(0)) != 0) {
-        QWidget *widget = item->widget();
-        bottomLayout->removeWidget(widget);
-        widget->deleteLater();
+    vector<int> array;
+    array.clear();
+    for (int i = 1; i <= size; i++) {
+        array.push_back(i);
     }
-//    std::cout << size << std::endl;
-//    sorter->array.clear();
-//    int currentSize = (int)sorter->array.size();
-//    if (currentSize < size) {
-//        for (int i = 0; i < size - currentSize; i++) {
-//            QFrame *frame = new QFrame;
-//            frame->setMinimumWidth(3);
-//            frame->setFixedWidth(5);
-////            frame->setStyleSheet("background-color: #6cf;");
-//            frame->setStyleSheet("background-color: white;");
-//            bottomLayout->addWidget(frame, 0, Qt::AlignBottom);
-//        }
-//    } else if (currentSize > size) {
-//        printf("%d", currentSize - size);
-//        for (int i = 0; i < currentSize - size; i++) {
-//            QLayoutItem *item = bottomLayout->takeAt(0);
-//            QWidget *widget = item->widget();
-//            bottomLayout->removeWidget(widget);
-//            widget->deleteLater();
-//        }
-//    }
     
-    sorter->array.clear();
     for (int i = 0; i < size; i++) {
-        sorter->array.push_back(i);
+        int randIndex = (int)random()%(array.size()-i) + i;
+        int tmp = array[i];
+        array[i] = array[randIndex];
+        array[randIndex] = tmp;
     }
-//    shuffle(sorter->array);
     
-    bottomLayout->update();
-    float baseHeight = (bottomLayout->parentWidget()->height() * 0.8)/size;
-//    float baseHeight = (800 * 0.8)/size;
-//    for (int i = 0; i < size; i++) {
-//        QWidget *widget = bottomLayout->itemAt(i)->widget();
-////        widget->setFixedWidth(sorter->array[i]*baseHeight);
-//        widget->setFixedWidth(sorter->array[i]*10);
-//        printf("%d, ", sorter->array[i]);
-//    }
-    for (int i = 0; i < size; i++) {
-        QFrame *frame = new QFrame;
-        frame->setMinimumWidth(3);
-        frame->setFixedWidth(5);
-        //            frame->setStyleSheet("background-color: #6cf;");
-        frame->setStyleSheet("background-color: white;");
-        int randIndex = (int)random()%(sorter->array.size()-i) + i;
-        int tmp = sorter->array[i];
-        sorter->array[i] = sorter->array[randIndex];
-        sorter->array[randIndex] = tmp;
-//        QLayoutItem *item = bottomLayout->itemAt(i);
-//        QWidget *widget = item->widget();
-        frame->setFixedHeight(sorter->array[i]*baseHeight);
-        bottomLayout->addWidget(frame, 0, Qt::AlignBottom);
-    }
+//    sorter->array = array;
+//    painterPalette->dataSource = array;
 
-//    for (int i = 0; i < size; i++) {
-//        int randIndex = (int)random()%(sorter->array.size()-i) + i;
-//        int tmp = sorter->array[i];
-//        sorter->array[i] = sorter->array[randIndex];
-//        sorter->array[randIndex] = tmp;
-//        QLayoutItem *item = bottomLayout->itemAt(i);
-//        QWidget *widget = item->widget();
-//        widget->setFixedHeight(sorter->array[i]*baseHeight);
-//    }
-    sorter->state = SortingStateSorting;
+    sorter->array.clear();
+    painterPalette->dataSource.clear();
+    for (auto item: array) {
+        sorter->array.push_back(item);
+        painterPalette->dataSource.push_back(item);
+    }
+    
+//    painterPalette->dataSource = array;
     sorter->sort();
+
+//    painterPalette->update();
 }
 
 void MainWindow::restart() {
@@ -194,22 +154,13 @@ void MainWindow::shuffle(vector<int> &array) {
 }
 
 void MainWindow::swapFrame(int i, int j) {
-    int maxVal = max(i, j);
-    int minVal = min(i, j);
-    QLayoutItem *minItem;
-    QLayoutItem *maxItem;
-    if ((maxItem = bottomLayout->takeAt(maxVal)) == 0 || (minItem = bottomLayout->takeAt(minVal)) == 0) {
-        return;
-    }
-    
-    QWidget *minFrame = minItem->widget();
-    QWidget *maxFrame = maxItem->widget();
-    int minHeight = minFrame->height();
-    int maxHeight = maxFrame->height();
-    minFrame->setFixedHeight(maxHeight);
-    maxFrame->setFixedHeight(minHeight);
     QTime t;
     t.start();
     while(t.elapsed()<15)
         QCoreApplication::processEvents();
+    int temp = painterPalette->dataSource[i];
+    
+    painterPalette->dataSource[i] = painterPalette->dataSource[j];
+    painterPalette->dataSource[j] = temp;
+    painterPalette->update();
 }

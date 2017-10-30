@@ -76,6 +76,21 @@
 					);
 			};
 		};
+		4F14CD6FDB67F1BBD96DF9DE = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.cpp";
+			name = "painterpalette.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E36803F11D945A166177CCDC = {
+			fileRef = "4F14CD6FDB67F1BBD96DF9DE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		3D1FD05EE23C07E33CF4EC43 = {
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.cpp";
@@ -151,6 +166,21 @@
 					);
 			};
 		};
+		FDAB802D77F1881C06C89DDB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_painterpalette.cpp";
+			name = "moc_painterpalette.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B4102F8EE02DA5955BF48207 = {
+			fileRef = "FDAB802D77F1881C06C89DDB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		050F87F9E1117BCBE01154A1 = {
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_sorter.cpp";
@@ -184,6 +214,13 @@
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h";
 			name = "mainwindow.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		15906CEB340F31934822E0C2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.h";
+			name = "painterpalette.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -241,6 +278,7 @@
 			children = (
 				"B8DDCC42EC5A585907F73C98",
 				"51A6B63996F7C35CCBE523AA",
+				"FDAB802D77F1881C06C89DDB",
 				"050F87F9E1117BCBE01154A1");
 			name = "Generated Sources";
 			sourceTree = "<group>";
@@ -252,12 +290,14 @@
 				"E8F7DB9BF993926E9DBE291F",
 				"011543DD36F78B4000FBAB3C",
 				"5F56B23AA47B4EC45E7B970A",
+				"4F14CD6FDB67F1BBD96DF9DE",
 				"3D1FD05EE23C07E33CF4EC43",
 				"774A533A100DCD37D8D9562D",
 				"6DA2D93DDDA677342902519D",
 				"C72BDEB5121EE5F0A622CE7D",
 				"36DE5AA569AA3CBD357B1457",
 				"D51401F310A9A8B9CD7A71F1",
+				"15906CEB340F31934822E0C2",
 				"7A8B3DAC38044D135970BDD9",
 				"FAA80243D4BCDE38A456E040",
 				"62AEBC9D79C4C5FC976B5D27");
@@ -297,11 +337,13 @@
 				"5DB5A69BDE3FAA62D7A45C5F",
 				"1B031F485D4600B74FADEA8A",
 				"1656485E38240C18B7140267",
+				"E36803F11D945A166177CCDC",
 				"6FD4F174EE6AEFBB4F812B27",
 				"5320B778B5213ACAE96A609C",
 				"DF56EF2890B3AE4BB9748D43",
 				"982433B80F93E107E9C92719",
 				"BC263ED4E80E84255DE99B82",
+				"B4102F8EE02DA5955BF48207",
 				"E2D2D0235D4878E5F10522A5",
 				"11AFD6F151782839D8A2750C");
 			isa = PBXSourcesBuildPhase;

@@ -110,4 +110,10 @@ dependencies: \
   sorterfactory.h bubblesorter.h \
   /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
-  quicksorter.h heapsorter.h
+  quicksorter.h heapsorter.h painterpalette.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QPainter \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainter.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtextoption.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpen.h

@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/mainwindow.cpp \
-  mainwindow.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/painterpalette.cpp \
+  painterpalette.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtguiglobal.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qglobal.h \
@@ -82,36 +82,7 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qcursor.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qkeysequence.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qicon.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QBoxLayout \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qlayout.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgridlayout.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QPushButton \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QButtonGroup \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qbuttongroup.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QSlider \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qslider.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractslider.h \
-  sorterfactory.h bubblesorter.h \
-  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
-  quicksorter.h heapsorter.h painterpalette.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QPainter \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainter.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtextoption.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpen.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QSignalMapper \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsignalmapper.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTime \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qdatetime.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QCoreApplication \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreapplication.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreevent.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeventloop.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpen.h

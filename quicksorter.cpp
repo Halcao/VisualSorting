@@ -2,39 +2,33 @@
 #include <iostream>
 
 void QuickSorter::sort() {
-    vector<int> a = array;
-    for (unsigned int i = 0; i < a.size(); i++) {
-        for (unsigned int j = 1; j < a.size() - i; j++) {
-            if (a[j-1] > a[j]) {
-                int tmp = a[j-1];
-                a[j-1] = a[j];
-                a[j] = tmp;
-                emit render1(j-1, j);
-            }
-        }
-    }
-//    for(int i = 0; i < (int)size(); i++) {
-//        for (int j = 1; j < (int)size()-i; i++) {
-//            // if not sorting, stop it
-//            if (state == SortingStateNotSorting) {
-//                onStopSorting();
-//                return;
-//            }
+    quickSort(0, (int)array.size()-1);
+}
 
-//            // flags to decide whether to swap or not
-////            bool ascendingNeedSwap = (array[j-1] > array[j]) && isAscending;
-////            bool descendingNeedSwap = (array[j-1] < array[j]) && !isAscending;
-////            if (ascendingNeedSwap || descendingNeedSwap) {
-//            if (array[j-1] > array[j]) {
-//                // swap to right order
-////                swap(array[j-1], array[j]);
-//                int tmp = array[j-1];
-//                array[j-1] = array[j];
-//                array[j] = tmp;
-//                // update UI
-////                render(j-1, j);
-//                emit render1(j-1, j);
-//            }
-//        }
-//    }
+int QuickSorter::partition(int low, int high)
+{
+    int pivot = array[low];
+    while(low < high)
+    {
+        while(low<high && array[high]>=pivot)
+            --high;
+        array[low] = array[high];
+        emit render1(low, high);
+        while(low<high && array[low]<=pivot)
+            ++low;
+        array[high] = array[low];
+        emit render1(low, high);
+    }
+    
+    array[low] = pivot;
+    return low;
+}
+
+void QuickSorter::quickSort(int low, int high) {
+    if(low < high)  // 递归跳出的条件
+    {
+        int pivotPos = partition(low, high); // 划分操作，返回基准元素的最终位置
+        quickSort(low, pivotPos-1);  // 递归
+        quickSort(pivotPos+1, high);
+    }
 }
