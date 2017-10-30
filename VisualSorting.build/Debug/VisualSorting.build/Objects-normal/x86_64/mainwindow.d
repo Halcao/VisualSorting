@@ -97,10 +97,17 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QSlider \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qslider.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractslider.h \
-  sorterfactory.h \
-  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/bubblesorter.h \
+  sorterfactory.h bubblesorter.h \
   /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
+  quicksorter.h heapsorter.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QSignalMapper \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsignalmapper.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
-  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTime \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qdatetime.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QCoreApplication \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreevent.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeventloop.h

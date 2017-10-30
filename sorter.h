@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <functional>
+#include <QObject>
 
 using namespace std;
 
@@ -17,11 +18,13 @@ typedef enum {
 typedef enum {
     BubbleSorterType = 0,
     QuickSorterType = 1,
-    HeapSorterType = 2,
+    HeapSorterType = 2
 } SorterType;
 
 // class of sorter
-class Sorter {
+class Sorter: public QObject {
+    Q_OBJECT
+    
 public:
     string name;
     SorterType type;
@@ -45,7 +48,10 @@ public:
 
     // callback to update UI
 //    virtual void render(int, int);
-    function<void(int, int)> render;
+//    function<void(int, int)> render;
+
+signals:
+    void render1(int, int);
 };
 
 #endif /* Sorter_h */

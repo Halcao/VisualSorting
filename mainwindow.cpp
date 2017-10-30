@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <QSignalMapper>
 #include <QFrame>
+#include <QTime>
+#include <QCoreApplication>
 
 MainWindow::MainWindow(QWidget *parent) :
 QMainWindow(parent),
@@ -33,18 +35,23 @@ bottomLayout(new QHBoxLayout) {
         // create the mapper, connect signal to slot
         QSignalMapper *mapper = new QSignalMapper;
         QObject::connect(button, SIGNAL(clicked()), mapper, SLOT(map()));
+        printf("%s->%d\n", sorter->name.c_str(), sorter->type);
         mapper->setMapping(button, sorter->type);
         QObject::connect(mapper, SIGNAL(mapped(int)), this, SLOT(setSorterType(int)));
-        
+        QObject::connect(sorter, SIGNAL(render1(int, int)), this, SLOT(swapFrame(int, int)));
         // add to the group, add to layout
         sorterGroup->addButton(button);
         topLayout->addWidget(button);
+        
 //        topLayout->setStretchFactor(button, 1);
+//        sorter->render = [&](int i, int j) {
+//            this->swap(i, j);
+//        };
     }
     speedSlider->setOrientation(Qt::Horizontal);
     topLayout->addWidget(speedSlider);
 //    topLayout->setStretchFactor(speedSlider, 5);
-
+    
     vector<int> sizeVec = {5, 10, 20, 50, 100, 150};
     for (auto size: sizeVec) {
         // init the button, set the style
@@ -83,13 +90,16 @@ void MainWindow::setSorterType(int type) {
     printf("%d", type);
     switch (type) {
         case BubbleSorterType:
-            sorter = SorterFactory::getSorter("BubbleSort");
+            sorter = sorters[0];
+//            sorter = SorterFactory::getSorter("BubbleSort");
             break;
         case QuickSorterType:
-            sorter = SorterFactory::getSorter("QuickSort");
+            sorter = sorters[1];
+//            sorter = SorterFactory::getSorter("QuickSort");
             break;
         case HeapSorterType:
-            sorter = SorterFactory::getSorter("HeapSort");
+            sorter = sorters[2];
+//            sorter = SorterFactory::getSorter("HeapSort");
             break;
         default:
             break;
@@ -101,27 +111,33 @@ void MainWindow::setSpeed(int speed) {
 }
 
 void MainWindow::setSize(int size) {
+    QLayoutItem *item;
+    while ((item = bottomLayout->takeAt(0)) != 0) {
+        QWidget *widget = item->widget();
+        bottomLayout->removeWidget(widget);
+        widget->deleteLater();
+    }
 //    std::cout << size << std::endl;
 //    sorter->array.clear();
-    int currentSize = sorter->array.size();
-    if (currentSize < size) {
-        for (int i = 0; i < size - currentSize; i++) {
-            QFrame *frame = new QFrame;
-            frame->setMinimumWidth(3);
-            frame->setFixedWidth(5);
-//            frame->setStyleSheet("background-color: #6cf;");
-            frame->setStyleSheet("background-color: white;");
-            bottomLayout->addWidget(frame, 0, Qt::AlignBottom);
-        }
-    } else if (currentSize > size) {
-        printf("%d", currentSize - size);
-        for (int i = 0; i < currentSize - size; i++) {
-            QLayoutItem *item = bottomLayout->takeAt(0);
-            QWidget *widget = item->widget();
-            bottomLayout->removeWidget(widget);
-            widget->deleteLater();
-        }
-    }
+//    int currentSize = (int)sorter->array.size();
+//    if (currentSize < size) {
+//        for (int i = 0; i < size - currentSize; i++) {
+//            QFrame *frame = new QFrame;
+//            frame->setMinimumWidth(3);
+//            frame->setFixedWidth(5);
+////            frame->setStyleSheet("background-color: #6cf;");
+//            frame->setStyleSheet("background-color: white;");
+//            bottomLayout->addWidget(frame, 0, Qt::AlignBottom);
+//        }
+//    } else if (currentSize > size) {
+//        printf("%d", currentSize - size);
+//        for (int i = 0; i < currentSize - size; i++) {
+//            QLayoutItem *item = bottomLayout->takeAt(0);
+//            QWidget *widget = item->widget();
+//            bottomLayout->removeWidget(widget);
+//            widget->deleteLater();
+//        }
+//    }
     
     sorter->array.clear();
     for (int i = 0; i < size; i++) {
@@ -138,17 +154,33 @@ void MainWindow::setSize(int size) {
 //        widget->setFixedWidth(sorter->array[i]*10);
 //        printf("%d, ", sorter->array[i]);
 //    }
-    
     for (int i = 0; i < size; i++) {
-        int randIndex = random()%(sorter->array.size()-i) + i;
+        QFrame *frame = new QFrame;
+        frame->setMinimumWidth(3);
+        frame->setFixedWidth(5);
+        //            frame->setStyleSheet("background-color: #6cf;");
+        frame->setStyleSheet("background-color: white;");
+        int randIndex = (int)random()%(sorter->array.size()-i) + i;
         int tmp = sorter->array[i];
         sorter->array[i] = sorter->array[randIndex];
         sorter->array[randIndex] = tmp;
-        QLayoutItem *item = bottomLayout->itemAt(i);
-        QWidget *widget = item->widget();
-        widget->setFixedHeight(sorter->array[i]*baseHeight);
+//        QLayoutItem *item = bottomLayout->itemAt(i);
+//        QWidget *widget = item->widget();
+        frame->setFixedHeight(sorter->array[i]*baseHeight);
+        bottomLayout->addWidget(frame, 0, Qt::AlignBottom);
     }
 
+//    for (int i = 0; i < size; i++) {
+//        int randIndex = (int)random()%(sorter->array.size()-i) + i;
+//        int tmp = sorter->array[i];
+//        sorter->array[i] = sorter->array[randIndex];
+//        sorter->array[randIndex] = tmp;
+//        QLayoutItem *item = bottomLayout->itemAt(i);
+//        QWidget *widget = item->widget();
+//        widget->setFixedHeight(sorter->array[i]*baseHeight);
+//    }
+    sorter->state = SortingStateSorting;
+    sorter->sort();
 }
 
 void MainWindow::restart() {
@@ -161,3 +193,23 @@ void MainWindow::shuffle(vector<int> &array) {
     random_shuffle(array.begin(), array.end());
 }
 
+void MainWindow::swapFrame(int i, int j) {
+    int maxVal = max(i, j);
+    int minVal = min(i, j);
+    QLayoutItem *minItem;
+    QLayoutItem *maxItem;
+    if ((maxItem = bottomLayout->takeAt(maxVal)) == 0 || (minItem = bottomLayout->takeAt(minVal)) == 0) {
+        return;
+    }
+    
+    QWidget *minFrame = minItem->widget();
+    QWidget *maxFrame = maxItem->widget();
+    int minHeight = minFrame->height();
+    int maxHeight = maxFrame->height();
+    minFrame->setFixedHeight(maxHeight);
+    maxFrame->setFixedHeight(minHeight);
+    QTime t;
+    t.start();
+    while(t.elapsed()<15)
+        QCoreApplication::processEvents();
+}

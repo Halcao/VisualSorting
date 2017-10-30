@@ -4,9 +4,9 @@ Sorter *SorterFactory::getSorter(const string &name) {
     if (name == "BubbleSort") {
         return new BubbleSorter;
     } else if (name == "QuickSort") {
-        return new BubbleSorter;
+        return new QuickSorter;
     } else if (name == "HeapSort") {
-        return new BubbleSorter;
+        return new HeapSorter;
     } else {
         return NULL;
     }

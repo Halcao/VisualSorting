@@ -2,7 +2,9 @@
 #define SorterFactory_h
 
 #include <iostream>
-#include <bubblesorter.h>
+#include "bubblesorter.h"
+#include "quicksorter.h"
+#include "heapsorter.h"
 
 class SorterFactory {
 private:

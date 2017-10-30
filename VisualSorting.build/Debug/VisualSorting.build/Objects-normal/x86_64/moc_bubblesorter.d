@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorterfactory.cpp \
-  sorterfactory.h bubblesorter.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/moc_bubblesorter.cpp \
+  bubblesorter.h \
   /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/sorter.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject.h \
@@ -43,5 +43,4 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qmetatype.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcontainerfwd.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject_impl.h \
-  quicksorter.h heapsorter.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject_impl.h

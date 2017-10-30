@@ -31,6 +31,8 @@ public:
 private:
     // generate random dataset
     void shuffle(vector<int> &);
+    // swap two frame in layout
+//    void swap(int i, int j);
     QHBoxLayout *bottomLayout;
 signals:
     void sorterTypeWillChange(SorterType);
@@ -40,6 +42,7 @@ public slots:
     void setSpeed(int);
     void setSorterType(int);
     void setSize(int);
+    void swapFrame(int, int);
     void restart();
 };
 

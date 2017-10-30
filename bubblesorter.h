@@ -4,11 +4,17 @@
 #include <sorter.h>
 
 class BubbleSorter: public Sorter {
+    Q_OBJECT
 public:
-    BubbleSorter() { name = "BubbleSort"; };
+    BubbleSorter() {
+        name = "BubbleSort";
+        type = BubbleSorterType;
+    };
 //    string name = "BubbleSort";
-    SorterType type = BubbleSorterType;
     virtual void sort();
+    
+//signals:
+//    void render1(int, int);
 };
 
 #endif // BUBBLESORTER_H

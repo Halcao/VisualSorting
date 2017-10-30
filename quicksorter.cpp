@@ -1,7 +1,7 @@
-#include "bubblesorter.h"
+#include "quicksorter.h"
 #include <iostream>
 
-void BubbleSorter::sort() {
+void QuickSorter::sort() {
     vector<int> a = array;
     for (unsigned int i = 0; i < a.size(); i++) {
         for (unsigned int j = 1; j < a.size() - i; j++) {
@@ -13,8 +13,6 @@ void BubbleSorter::sort() {
             }
         }
     }
-
-    printf(" ");
 //    for(int i = 0; i < (int)size(); i++) {
 //        for (int j = 1; j < (int)size()-i; i++) {
 //            // if not sorting, stop it
