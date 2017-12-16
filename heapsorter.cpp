@@ -11,6 +11,9 @@ void HeapSorter::AdjustDown(int i, int len)
             ++largest;         // 如果右子结点大
         if(temp < array[largest])
         {
+            if (state == SortingStateNotSorting) {
+                return;
+            }
             array[i] = array[largest];
             emit render1(i, largest);
             i = largest;         // 记录交换后的位置
@@ -31,6 +34,9 @@ void HeapSorter::sort() {
     BuildMaxHeap(n);       // 初始建堆
     for(int i=n-1; i>0; --i)  // n-1趟的交换和建堆过程
     {
+        if (state == SortingStateNotSorting) {
+            return;
+        }
         // 输出最大的堆顶元素（和堆底元素交换）
         array[0] = array[0]^array[i];
         array[i] = array[0]^array[i];

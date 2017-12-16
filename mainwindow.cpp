@@ -43,6 +43,8 @@ bottomLayout(new QHBoxLayout) {
         sorterGroup->addButton(button);
         topLayout->addWidget(button);
     }
+    speedSlider->setRange(1, 100);
+    QObject::connect(speedSlider, SIGNAL(valueChanged(int)), this, SLOT(setSpeed(int)));
     speedSlider->setOrientation(Qt::Horizontal);
     topLayout->addWidget(speedSlider);
     
@@ -77,12 +79,13 @@ bottomLayout(new QHBoxLayout) {
 //    QFrame *painterPanel = new QFrame;
 //    bottomLayout->addWidget(painterPanel);
     painterPalette = new PainterPalette;
+//    painterPalette->setFixedSize(600, 1500);
     
     painterPalette->dataSource = {14, 23, 34, 41, 15, 63, 7, 82, 39, 10};
     bottomLayout->addWidget(painterPalette);
 
-    painterPalette->setMaximumSize(400, 400);
-    painterPalette->setMinimumSize(100, 100);
+//    painterPalette->setMaximumSize(400, 400);
+//    painterPalette->setMinimumSize(100, 100);
     // set central widget
     QWidget *centralWidget = new QWidget;
     centralWidget->setLayout(mainLayout);
@@ -91,6 +94,7 @@ bottomLayout(new QHBoxLayout) {
 
 void MainWindow::setSorterType(int type) {
     printf("%d", type);
+    sorter->state = SortingStateNotSorting;
     switch (type) {
         case BubbleSorterType:
             sorter = sorters[0];
@@ -110,10 +114,15 @@ void MainWindow::setSorterType(int type) {
 }
 
 void MainWindow::setSpeed(int speed) {
-    this->speed = speed;
+    this->speed = 100 - speed;
 }
 
 void MainWindow::setSize(int size) {
+    sorter->state = SortingStateNotSorting;
+//    string name = sorter->name;
+//    this->sorter = SorterFactory::getSorter(name);
+//    this->sorter->state = SortingStateNotSorting;
+//    cout << sorter->type << endl;
     vector<int> array;
     array.clear();
     for (int i = 1; i <= size; i++) {
@@ -127,39 +136,43 @@ void MainWindow::setSize(int size) {
         array[randIndex] = tmp;
     }
     
-//    sorter->array = array;
-//    painterPalette->dataSource = array;
-
     sorter->array.clear();
     painterPalette->dataSource.clear();
     for (auto item: array) {
         sorter->array.push_back(item);
         painterPalette->dataSource.push_back(item);
     }
-    
-//    painterPalette->dataSource = array;
+    sorter->state = SortingStateSorting;
     sorter->sort();
-
-//    painterPalette->update();
+    sorter->state = SortingStateNotSorting;
 }
 
 void MainWindow::restart() {
+    sorter->state = SortingStateNotSorting;
     sorter->onStopSorting();
     shuffle(sorter->array);
     sorter->onStartSorting();
 }
 
 void MainWindow::shuffle(vector<int> &array) {
+    sorter->state = SortingStateNotSorting;
     random_shuffle(array.begin(), array.end());
 }
 
 void MainWindow::swapFrame(int i, int j) {
+    if (sorter->state == SortingStateNotSorting) {
+        return;
+    }
     QTime t;
     t.start();
-    while(t.elapsed()<15)
+//    cout << speed/100.0 << endl;
+    while(t.elapsed()<speed/100.0)
         QCoreApplication::processEvents();
     int temp = painterPalette->dataSource[i];
     
+    if (sorter->state == SortingStateNotSorting) {
+        return;
+    }
     painterPalette->dataSource[i] = painterPalette->dataSource[j];
     painterPalette->dataSource[j] = temp;
     painterPalette->update();

@@ -107,6 +107,21 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainter.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtextoption.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpen.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsScene \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsView \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgraphicsview.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qscrollarea.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItem \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qvariant.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItemAnimation \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgraphicsitemanimation.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qtimeline.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeasingcurve.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QSignalMapper \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsignalmapper.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTime \
