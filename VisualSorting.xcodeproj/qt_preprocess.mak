@@ -30,8 +30,8 @@ check: first
 
 benchmark: first
 
-compilers: moc_predefs.h moc_bubblesorter.cpp moc_mainwindow.cpp moc_painterpalette.cpp\
-	 moc_sorter.cpp
+compilers: moc_predefs.h moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp\
+	 moc_painterpalette.cpp moc_sorter.cpp
 compiler_rcc_make_all:
 compiler_rcc_clean:
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -40,55 +40,61 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_bubblesorter.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
+compiler_moc_header_make_all: moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_bubblesorter.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
+	-$(DEL_FILE) moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
 moc_bubblesorter.cpp: sorter.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
-		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject.h \
 		bubblesorter.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
 	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib bubblesorter.h -o moc_bubblesorter.cpp
 
+moc_graphicsview.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsView \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItem \
+		graphicsview.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib graphicsview.h -o moc_graphicsview.cpp
+
 moc_mainwindow.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QMainWindow \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QBoxLayout \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qboxlayout.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QPushButton \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qpushbutton.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QButtonGroup \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qbuttongroup.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QSlider \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qslider.h \
 		sorterfactory.h \
 		bubblesorter.h \
 		sorter.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
-		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject.h \
 		quicksorter.h \
 		heapsorter.h \
 		painterpalette.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QPainter \
-		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainter.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsScene \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsView \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItem \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItemAnimation \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
 		mainwindow.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
 	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib mainwindow.h -o moc_mainwindow.cpp
 
 moc_painterpalette.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFrame \
-		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qframe.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QPainter \
-		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qpainter.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsScene \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsView \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItem \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItemAnimation \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
 		painterpalette.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
 	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib painterpalette.h -o moc_painterpalette.cpp
 
 moc_sorter.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
-		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qobject.h \
 		sorter.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc

@@ -129,4 +129,5 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QCoreApplication \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreapplication.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreevent.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeventloop.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeventloop.h \
+  graphicsview.h

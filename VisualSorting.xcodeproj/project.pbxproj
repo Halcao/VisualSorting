@@ -5,761 +5,545 @@
 	};
 	objectVersion = 46;
 	objects = {
-		5E618435888B9D49F8540165 = {
-			buildActionMask = 2147483647;
-			files = (
-				);
-			isa = PBXShellScriptBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Qt Qmake";
-			shellPath = "/bin/sh";
-			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_makeqmake.mak";
-			showEnvVarsInLog = "0";
+
+/* Begin PBXAggregateTarget section */
+		70E2801BAAC800E2BC18FF57 /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
 		};
-		3A756C037F21AC304DE015D6 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp";
-			name = "bubblesorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 11F76B65BE080190A4D69131 /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
+		1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 011543DD36F78B4000FBAB3C /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		31F5EE318CBBDCCACCCA3491 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */; };
+		5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 774A533A100DCD37D8D9562D /* sorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A756C037F21AC304DE015D6 /* bubblesorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		5DB5A69BDE3FAA62D7A45C5F /* heapsorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		6FD4F174EE6AEFBB4F812B27 /* quicksorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		76A7E972FABC8AE5E7849B37 /* moc_graphicsview.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */; settings = {ATTRIBUTES = (); }; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		8E89D0C5DF35140764407102 /* graphicsview.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */; settings = {ATTRIBUTES = (); }; };
+		982433B80F93E107E9C92719 /* moc_bubblesorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 29CD04F802630A54ABBFAE7F /* QtGui.framework */; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		B4102F8EE02DA5955BF48207 /* moc_painterpalette.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */; settings = {ATTRIBUTES = (); }; };
+		B537134372803027546F936E /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 26FB077F01E285C42AEF1627 /* QtWidgets.framework */; };
+		BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6DA2D93DDDA677342902519D /* sorterfactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		E2D2D0235D4878E5F10522A5 /* moc_sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */; settings = {ATTRIBUTES = (); }; };
+		E36803F11D945A166177CCDC /* painterpalette.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */; settings = {ATTRIBUTES = (); }; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		369C37001FE5AB8700CABD4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E2801BAAC800E2BC18FF57;
+			remoteInfo = "Qt Preprocess";
 		};
-		58F0D288270463BDD94EFFD4 = {
-			fileRef = "3A756C037F21AC304DE015D6";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		E8F7DB9BF993926E9DBE291F = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.cpp";
-			name = "heapsorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		5DB5A69BDE3FAA62D7A45C5F = {
-			fileRef = "E8F7DB9BF993926E9DBE291F";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		011543DD36F78B4000FBAB3C = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/main.cpp";
-			name = "main.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		1B031F485D4600B74FADEA8A = {
-			fileRef = "011543DD36F78B4000FBAB3C";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		5F56B23AA47B4EC45E7B970A = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.cpp";
-			name = "mainwindow.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		1656485E38240C18B7140267 = {
-			fileRef = "5F56B23AA47B4EC45E7B970A";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		4F14CD6FDB67F1BBD96DF9DE = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.cpp";
-			name = "painterpalette.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		E36803F11D945A166177CCDC = {
-			fileRef = "4F14CD6FDB67F1BBD96DF9DE";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		3D1FD05EE23C07E33CF4EC43 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.cpp";
-			name = "quicksorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		6FD4F174EE6AEFBB4F812B27 = {
-			fileRef = "3D1FD05EE23C07E33CF4EC43";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		774A533A100DCD37D8D9562D = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.cpp";
-			name = "sorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		5320B778B5213ACAE96A609C = {
-			fileRef = "774A533A100DCD37D8D9562D";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		6DA2D93DDDA677342902519D = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.cpp";
-			name = "sorterfactory.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		DF56EF2890B3AE4BB9748D43 = {
-			fileRef = "6DA2D93DDDA677342902519D";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		B8DDCC42EC5A585907F73C98 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_bubblesorter.cpp";
-			name = "moc_bubblesorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		982433B80F93E107E9C92719 = {
-			fileRef = "B8DDCC42EC5A585907F73C98";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		51A6B63996F7C35CCBE523AA = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_mainwindow.cpp";
-			name = "moc_mainwindow.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		BC263ED4E80E84255DE99B82 = {
-			fileRef = "51A6B63996F7C35CCBE523AA";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		FDAB802D77F1881C06C89DDB = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_painterpalette.cpp";
-			name = "moc_painterpalette.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		B4102F8EE02DA5955BF48207 = {
-			fileRef = "FDAB802D77F1881C06C89DDB";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		050F87F9E1117BCBE01154A1 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_sorter.cpp";
-			name = "moc_sorter.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		E2D2D0235D4878E5F10522A5 = {
-			fileRef = "050F87F9E1117BCBE01154A1";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		C72BDEB5121EE5F0A622CE7D = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h";
-			name = "bubblesorter.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		36DE5AA569AA3CBD357B1457 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.h";
-			name = "heapsorter.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		D51401F310A9A8B9CD7A71F1 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h";
-			name = "mainwindow.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		15906CEB340F31934822E0C2 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.h";
-			name = "painterpalette.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		7A8B3DAC38044D135970BDD9 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.h";
-			name = "quicksorter.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		FAA80243D4BCDE38A456E040 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.h";
-			name = "sorter.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		62AEBC9D79C4C5FC976B5D27 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.h";
-			name = "sorterfactory.h";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.c.h";
-		};
-		0B49E2B9B887FFD5857E69A1 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/VisualSorting.pro";
-			name = "VisualSorting.pro";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "text";
-		};
-		D09DA6FBF2253E805C8FBB17 = {
-			isa = PBXFileReference;
-			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/.qmake.stash";
-			name = ".qmake.stash";
-			sourceTree = "<absolute>";
-		};
-		11F76B65BE080190A4D69131 = {
-			isa = PBXFileReference;
-			path = "/usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp";
-			name = "dummy.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		11AFD6F151782839D8A2750C = {
-			fileRef = "11F76B65BE080190A4D69131";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		25B08E2869634E9BCBA333A2 = {
-			isa = PBXGroup;
-			children = (
-				"B8DDCC42EC5A585907F73C98",
-				"51A6B63996F7C35CCBE523AA",
-				"FDAB802D77F1881C06C89DDB",
-				"050F87F9E1117BCBE01154A1");
-			name = "Generated Sources";
-			sourceTree = "<group>";
-		};
-		2EB56BE3C2D93CDAB0C52E67 = {
-			isa = PBXGroup;
-			children = (
-				"3A756C037F21AC304DE015D6",
-				"E8F7DB9BF993926E9DBE291F",
-				"011543DD36F78B4000FBAB3C",
-				"5F56B23AA47B4EC45E7B970A",
-				"4F14CD6FDB67F1BBD96DF9DE",
-				"3D1FD05EE23C07E33CF4EC43",
-				"774A533A100DCD37D8D9562D",
-				"6DA2D93DDDA677342902519D",
-				"C72BDEB5121EE5F0A622CE7D",
-				"36DE5AA569AA3CBD357B1457",
-				"D51401F310A9A8B9CD7A71F1",
-				"15906CEB340F31934822E0C2",
-				"7A8B3DAC38044D135970BDD9",
-				"FAA80243D4BCDE38A456E040",
-				"62AEBC9D79C4C5FC976B5D27");
-			name = "Sources";
-			sourceTree = "<group>";
-		};
-		B8254625CFD509ED2A24A166 = {
-			isa = PBXGroup;
-			children = (
-				"11F76B65BE080190A4D69131");
-			name = "Sources [moc_predefs]";
-			sourceTree = "<group>";
-		};
-		74B182DB50CB5611B5C1C297 = {
-			isa = PBXGroup;
-			children = (
-				"0B49E2B9B887FFD5857E69A1",
-				"D09DA6FBF2253E805C8FBB17");
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7EF0942E79C014DCEC8976BC = {
-			buildActionMask = 2147483647;
-			files = (
-				);
-			isa = PBXShellScriptBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Qt Preprocessors";
-			shellPath = "/bin/sh";
-			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_preprocess.mak";
-			showEnvVarsInLog = "0";
-		};
-		F7E50F631C51CD5B5DC0BC43 = {
-			buildActionMask = 2147483647;
-			files = (
-				"58F0D288270463BDD94EFFD4",
-				"5DB5A69BDE3FAA62D7A45C5F",
-				"1B031F485D4600B74FADEA8A",
-				"1656485E38240C18B7140267",
-				"E36803F11D945A166177CCDC",
-				"6FD4F174EE6AEFBB4F812B27",
-				"5320B778B5213ACAE96A609C",
-				"DF56EF2890B3AE4BB9748D43",
-				"982433B80F93E107E9C92719",
-				"BC263ED4E80E84255DE99B82",
-				"B4102F8EE02DA5955BF48207",
-				"E2D2D0235D4878E5F10522A5",
-				"11AFD6F151782839D8A2750C");
-			isa = PBXSourcesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Compile Sources";
-		};
-		26FB077F01E285C42AEF1627 = {
-			isa = PBXFileReference;
-			name = "QtWidgets.framework";
-			path = "/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		B537134372803027546F936E = {
-			fileRef = "26FB077F01E285C42AEF1627";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		29CD04F802630A54ABBFAE7F = {
-			isa = PBXFileReference;
-			name = "QtGui.framework";
-			path = "/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		9887B6B23D47BC46EC7E11C1 = {
-			fileRef = "29CD04F802630A54ABBFAE7F";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		F86E8D3BAE6BF3F107CC1421 = {
-			isa = PBXFileReference;
-			name = "QtCore.framework";
-			path = "/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		31F5EE318CBBDCCACCCA3491 = {
-			fileRef = "F86E8D3BAE6BF3F107CC1421";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		2B774D8E4178765CE52EAAF5 = {
-			isa = PBXFileReference;
-			name = "DiskArbitration.framework";
-			path = "/System/Library/Frameworks/DiskArbitration.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		A99B2AA0F9CBBDD12BA126A4 = {
-			fileRef = "2B774D8E4178765CE52EAAF5";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A1A67BEAA744704B29168D39 = {
-			isa = PBXFileReference;
-			name = "IOKit.framework";
-			path = "/System/Library/Frameworks/IOKit.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		8D267F2E4776F0ECA2F49DC8 = {
-			fileRef = "A1A67BEAA744704B29168D39";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		D4B32C2222F82AC56BADEB21 = {
-			isa = PBXFileReference;
-			name = "OpenGL.framework";
-			path = "/System/Library/Frameworks/OpenGL.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		8771A8C96E9C391044035D99 = {
-			fileRef = "D4B32C2222F82AC56BADEB21";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		8D9815BDB5BD9F90D2BC05C5 = {
-			isa = PBXFileReference;
-			name = "AGL.framework";
-			path = "/System/Library/Frameworks/AGL.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		E45E51A644D5FC9F942ECE55 = {
-			fileRef = "8D9815BDB5BD9F90D2BC05C5";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		AF39DD055C3EF8226FBE929D = {
-			children = (
-				"26FB077F01E285C42AEF1627",
-				"29CD04F802630A54ABBFAE7F",
-				"F86E8D3BAE6BF3F107CC1421",
-				"2B774D8E4178765CE52EAAF5",
-				"A1A67BEAA744704B29168D39",
-				"D4B32C2222F82AC56BADEB21",
-				"8D9815BDB5BD9F90D2BC05C5");
-			isa = PBXGroup;
-			name = "Frameworks";
-			sourceTree = "<group>";
-		};
-		D1C883685E82D5676953459A = {
-			buildActionMask = 2147483647;
-			files = (
-				"B537134372803027546F936E",
-				"9887B6B23D47BC46EC7E11C1",
-				"31F5EE318CBBDCCACCCA3491",
-				"A99B2AA0F9CBBDD12BA126A4",
-				"8D267F2E4776F0ECA2F49DC8",
-				"8771A8C96E9C391044035D99",
-				"E45E51A644D5FC9F942ECE55");
-			isa = PBXFrameworksBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Link Binary With Libraries";
-		};
-		30414803F31797EB689AE508 = {
-			buildActionMask = 2147483647;
-			files = (
-				);
-			isa = PBXResourcesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Copy Bundle Resources";
-		};
-		99542592E9780B9225F24AA8 = {
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99542592E9780B9225F24AA8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				);
+			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E1BB919E5247FA4E4B91039 = {
-			isa = PBXFileReference;
-			includeInIndex = 0;
-			explicitFileType = "wrapper.application";
-			path = "VisualSorting.app";
-			sourceTree = BUILT_PRODUCTS_DIR;
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		011543DD36F78B4000FBAB3C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/main.cpp"; sourceTree = "<absolute>"; };
+		050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_sorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_sorter.cpp"; sourceTree = "<absolute>"; };
+		0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_graphicsview.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_graphicsview.cpp"; sourceTree = "<absolute>"; };
+		0B49E2B9B887FFD5857E69A1 /* VisualSorting.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = VisualSorting.pro; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/VisualSorting.pro"; sourceTree = "<absolute>"; };
+		11F76B65BE080190A4D69131 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp; sourceTree = "<absolute>"; };
+		15906CEB340F31934822E0C2 /* painterpalette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = painterpalette.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.h"; sourceTree = "<absolute>"; };
+		26FB077F01E285C42AEF1627 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+		29CD04F802630A54ABBFAE7F /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		36DE5AA569AA3CBD357B1457 /* heapsorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = heapsorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.h"; sourceTree = "<absolute>"; };
+		3A756C037F21AC304DE015D6 /* bubblesorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bubblesorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp"; sourceTree = "<absolute>"; };
+		3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = quicksorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.cpp"; sourceTree = "<absolute>"; };
+		4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = painterpalette.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.cpp"; sourceTree = "<absolute>"; };
+		51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_mainwindow.cpp"; sourceTree = "<absolute>"; };
+		5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.cpp"; sourceTree = "<absolute>"; };
+		62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorterfactory.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.h"; sourceTree = "<absolute>"; };
+		6DA2D93DDDA677342902519D /* sorterfactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorterfactory.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.cpp"; sourceTree = "<absolute>"; };
+		774A533A100DCD37D8D9562D /* sorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.cpp"; sourceTree = "<absolute>"; };
+		7A8B3DAC38044D135970BDD9 /* quicksorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = quicksorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.h"; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		8EEEF79DAFBABB53DF208546 /* graphicsview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphicsview.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.h"; sourceTree = "<absolute>"; };
+		9E1BB919E5247FA4E4B91039 /* VisualSorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualSorting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_bubblesorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_bubblesorter.cpp"; sourceTree = "<absolute>"; };
+		C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bubblesorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h"; sourceTree = "<absolute>"; };
+		D09DA6FBF2253E805C8FBB17 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/.qmake.stash"; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D51401F310A9A8B9CD7A71F1 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h"; sourceTree = "<absolute>"; };
+		E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = heapsorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.cpp"; sourceTree = "<absolute>"; };
+		F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = graphicsview.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.cpp"; sourceTree = "<absolute>"; };
+		F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		FAA80243D4BCDE38A456E040 /* sorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.h"; sourceTree = "<absolute>"; };
+		FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_painterpalette.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_painterpalette.cpp"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B537134372803027546F936E /* QtWidgets.framework in Link Binary With Libraries */,
+				9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */,
+				31F5EE318CBBDCCACCCA3491 /* QtCore.framework in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE0A091FDBFB3E9C31B7A1BD = {
-			children = (
-				"9E1BB919E5247FA4E4B91039");
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
 			isa = PBXGroup;
-			name = "Products";
+			children = (
+				B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */,
+				0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */,
+				51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */,
+				FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */,
+				050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */,
+			);
+			name = "Generated Sources";
 			sourceTree = "<group>";
 		};
-		E8C543AB96796ECAA2E65C57 = {
-			children = (
-				"2EB56BE3C2D93CDAB0C52E67",
-				"25B08E2869634E9BCBA333A2",
-				"74B182DB50CB5611B5C1C297",
-				"B8254625CFD509ED2A24A166",
-				"AF39DD055C3EF8226FBE929D",
-				"FE0A091FDBFB3E9C31B7A1BD");
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
-			name = "VisualSorting";
+			children = (
+				3A756C037F21AC304DE015D6 /* bubblesorter.cpp */,
+				F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */,
+				8EEEF79DAFBABB53DF208546 /* graphicsview.h */,
+				E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */,
+				011543DD36F78B4000FBAB3C /* main.cpp */,
+				5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */,
+				4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */,
+				3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */,
+				774A533A100DCD37D8D9562D /* sorter.cpp */,
+				6DA2D93DDDA677342902519D /* sorterfactory.cpp */,
+				C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */,
+				36DE5AA569AA3CBD357B1457 /* heapsorter.h */,
+				D51401F310A9A8B9CD7A71F1 /* mainwindow.h */,
+				15906CEB340F31934822E0C2 /* painterpalette.h */,
+				7A8B3DAC38044D135970BDD9 /* quicksorter.h */,
+				FAA80243D4BCDE38A456E040 /* sorter.h */,
+				62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
-		70E2801BAAC800E2BC18FF57 = {
-			buildPhases = (
-				"5E618435888B9D49F8540165",
-				"7EF0942E79C014DCEC8976BC");
-			dependencies = (
-				);
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
-			isa = PBXAggregateTarget;
-			buildRules = (
-);
-			productName = "Qt Preprocess";
-			name = "Qt Preprocess";
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B49E2B9B887FFD5857E69A1 /* VisualSorting.pro */,
+				D09DA6FBF2253E805C8FBB17 /* .qmake.stash */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
 		};
-		938B64238DB76E298C94792E = {
-			isa = PBXTargetDependency;
-			target = "70E2801BAAC800E2BC18FF57";
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26FB077F01E285C42AEF1627 /* QtWidgets.framework */,
+				29CD04F802630A54ABBFAE7F /* QtGui.framework */,
+				F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
-		79676B21544A58F104F2979A = {
-			buildPhases = (
-				"F7E50F631C51CD5B5DC0BC43",
-				"D1C883685E82D5676953459A",
-				"30414803F31797EB689AE508",
-				"99542592E9780B9225F24AA8");
-			dependencies = (
-				"938B64238DB76E298C94792E");
-			productReference = "9E1BB919E5247FA4E4B91039";
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+		B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */ = {
+			isa = PBXGroup;
+			children = (
+				11F76B65BE080190A4D69131 /* dummy.cpp */,
+			);
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* VisualSorting */ = {
+			isa = PBXGroup;
+			children = (
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = VisualSorting;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1BB919E5247FA4E4B91039 /* VisualSorting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79676B21544A58F104F2979A /* VisualSorting */ = {
 			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+				99542592E9780B9225F24AA8 /* Embed Frameworks */,
+			);
 			buildRules = (
-);
+			);
+			dependencies = (
+				938B64238DB76E298C94792E /* PBXTargetDependency */,
+			);
+			name = VisualSorting;
+			productName = VisualSorting;
+			productReference = 9E1BB919E5247FA4E4B91039 /* VisualSorting.app */;
 			productType = "com.apple.product-type.application";
-			name = "VisualSorting";
-			productName = "VisualSorting";
 		};
-		3AA6C32AC930069E80220CF1 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=macosx*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
-				ENABLE_BITCODE = "NO";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
-				GCC_OPTIMIZATION_LEVEL = "0";
-				ONLY_ACTIVE_ARCH = "YES";
-				PRODUCT_NAME = "VisualSorting";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				INFOPLIST_FILE = "Info.plist";
-				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
-				DYLIB_CURRENT_VERSION = "1.0.0";
-				DYLIB_COMPATIBILITY_VERSION = "1.0";
-				MACOSX_DEPLOYMENT_TARGET = "10.10";
-				HEADER_SEARCH_PATHS = (
-					".",
-					".",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers",
-					".",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang");
-				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/Cellar/qt/5.9.1/lib",
-					"/System/Library/Frameworks/");
-				FRAMEWORK_SEARCH_PATHS = (
-					"/usr/local/Cellar/qt/5.9.1/lib",
-					"/usr/local/Cellar/qt/5.9.1/lib");
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_LDFLAGS = (
-						"-stdlib=libc++",
-						"-headerpad_max_install_names",
-						"-Wl,-rpath,@executable_path/Frameworks",
-						"-F/usr/local/Cellar/qt/5.9.1/lib");
-				ARCHS = "x86_64";
-			};
-			name = "Debug";
-		};
-		77418F46922677BB04ED38DD = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=macosx*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
-				ENABLE_BITCODE = "NO";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
-				GCC_OPTIMIZATION_LEVEL = "0";
-				ONLY_ACTIVE_ARCH = "YES";
-				PRODUCT_NAME = "VisualSorting";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx";
-				PRODUCT_NAME = "VisualSorting";
-			};
-			name = "Debug";
-		};
-		339EE1B2CC4FC24589A0EA95 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=macosx*]" = "x86_64";
-				COPY_PHASE_STRIP = "YES";
-				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
-				ENABLE_BITCODE = "NO";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
-				PRODUCT_NAME = "VisualSorting";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				INFOPLIST_FILE = "Info.plist";
-				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
-				DYLIB_CURRENT_VERSION = "1.0.0";
-				DYLIB_COMPATIBILITY_VERSION = "1.0";
-				MACOSX_DEPLOYMENT_TARGET = "10.10";
-				HEADER_SEARCH_PATHS = (
-					".",
-					".",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers",
-					".",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers",
-					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang");
-				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/Cellar/qt/5.9.1/lib",
-					"/System/Library/Frameworks/");
-				FRAMEWORK_SEARCH_PATHS = (
-					"/usr/local/Cellar/qt/5.9.1/lib",
-					"/usr/local/Cellar/qt/5.9.1/lib");
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_LDFLAGS = (
-						"-stdlib=libc++",
-						"-headerpad_max_install_names",
-						"-Wl,-rpath,@executable_path/Frameworks",
-						"-F/usr/local/Cellar/qt/5.9.1/lib");
-				ARCHS = "x86_64";
-			};
-			name = "Release";
-		};
-		6666AA5E688052234F6758D8 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=macosx*]" = "x86_64";
-				COPY_PHASE_STRIP = "YES";
-				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
-				ENABLE_BITCODE = "NO";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
-				PRODUCT_NAME = "VisualSorting";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "macosx";
-				PRODUCT_NAME = "VisualSorting";
-			};
-			name = "Release";
-		};
-		DAC4C1AA5EDEA1C85E9CA5E6 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"3AA6C32AC930069E80220CF1",
-				"339EE1B2CC4FC24589A0EA95");
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release";
-		};
-		6CC3B5D2136C7CD6A5CF5A59 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"77418F46922677BB04ED38DD",
-				"6666AA5E688052234F6758D8");
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release";
-		};
-		6DB9C3763D02B1415CD9D565 = {
-			hasScannedForEncodings = 1;
-			compatibilityVersion = "Xcode 3.2";
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
 			isa = PBXProject;
-			mainGroup = "E8C543AB96796ECAA2E65C57";
-			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
-			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
+			attributes = {
+				TargetAttributes = {
+					70E2801BAAC800E2BC18FF57 = {
+						DevelopmentTeam = TYRRVX7RWJ;
+					};
+					79676B21544A58F104F2979A = {
+						DevelopmentTeam = TYRRVX7RWJ;
+					};
+				};
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "VisualSorting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* VisualSorting */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"79676B21544A58F104F2979A",
-				"70E2801BAAC800E2BC18FF57");
-			attributes = {
-				TargetAttributes = {
-				};
-			};
+				79676B21544A58F104F2979A /* VisualSorting */,
+				70E2801BAAC800E2BC18FF57 /* Qt Preprocess */,
+			);
 		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */,
+				8E89D0C5DF35140764407102 /* graphicsview.cpp in Compile Sources */,
+				5DB5A69BDE3FAA62D7A45C5F /* heapsorter.cpp in Compile Sources */,
+				1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */,
+				1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */,
+				E36803F11D945A166177CCDC /* painterpalette.cpp in Compile Sources */,
+				6FD4F174EE6AEFBB4F812B27 /* quicksorter.cpp in Compile Sources */,
+				5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */,
+				DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */,
+				982433B80F93E107E9C92719 /* moc_bubblesorter.cpp in Compile Sources */,
+				76A7E972FABC8AE5E7849B37 /* moc_graphicsview.cpp in Compile Sources */,
+				BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */,
+				B4102F8EE02DA5955BF48207 /* moc_painterpalette.cpp in Compile Sources */,
+				E2D2D0235D4878E5F10522A5 /* moc_sorter.cpp in Compile Sources */,
+				11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		938B64238DB76E298C94792E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E2801BAAC800E2BC18FF57 /* Qt Preprocess */;
+			targetProxy = 369C37001FE5AB8700CABD4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = x86_64;
+				"ARCHS[sdk=macosx*]" = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = TYRRVX7RWJ;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/usr/local/Cellar/qt/5.9.1/lib,
+					/usr/local/Cellar/qt/5.9.1/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					.,
+					/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers,
+					/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers,
+					/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/qt/5.9.1/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-headerpad_max_install_names",
+					"-Wl,-rpath,@executable_path/Frameworks",
+					"-F/usr/local/Cellar/qt/5.9.1/lib",
+				);
+				PRODUCT_NAME = VisualSorting;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = x86_64;
+				"ARCHS[sdk=macosx*]" = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = TYRRVX7RWJ;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/usr/local/Cellar/qt/5.9.1/lib,
+					/usr/local/Cellar/qt/5.9.1/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					.,
+					/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers,
+					/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers,
+					/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/qt/5.9.1/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-headerpad_max_install_names",
+					"-Wl,-rpath,@executable_path/Frameworks",
+					"-F/usr/local/Cellar/qt/5.9.1/lib",
+				);
+				PRODUCT_NAME = VisualSorting;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=macosx*]" = x86_64;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = TYRRVX7RWJ;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = VisualSorting;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=macosx*]" = x86_64;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = TYRRVX7RWJ;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VisualSorting;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "VisualSorting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
 	};
-	rootObject = "6DB9C3763D02B1415CD9D565";
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
 }

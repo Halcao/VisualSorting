@@ -4,6 +4,7 @@
 #include <QFrame>
 #include <QTime>
 #include <QCoreApplication>
+#include "graphicsview.h"
 
 MainWindow::MainWindow(QWidget *parent) :
 QMainWindow(parent),
@@ -118,6 +119,10 @@ void MainWindow::setSpeed(int speed) {
 }
 
 void MainWindow::setSize(int size) {
+    GraphicsView *view = new GraphicsView;
+    view->show();
+
+    
     sorter->state = SortingStateNotSorting;
 //    string name = sorter->name;
 //    this->sorter = SorterFactory::getSorter(name);
