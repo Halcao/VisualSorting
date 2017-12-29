@@ -30,8 +30,22 @@ check: first
 
 benchmark: first
 
-compilers: moc_predefs.h moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp\
-	 moc_painterpalette.cpp moc_sorter.cpp
+compilers: moc_predefs.h moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp\
+	 moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp\
+	 moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp\
+	 moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp\
+	 moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp\
+	 moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp\
+	 moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp\
+	 moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp\
+	 moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp\
+	 moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp\
+	 moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp\
+	 moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp\
+	 moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp\
+	 moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp\
+	 moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp\
+	 moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
 compiler_rcc_make_all:
 compiler_rcc_clean:
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -40,15 +54,30 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
+compiler_moc_header_make_all: moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_bubblesorter.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp
+	-$(DEL_FILE) moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
 moc_bubblesorter.cpp: sorter.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
 		bubblesorter.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
 	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib bubblesorter.h -o moc_bubblesorter.cpp
+
+moc_frameless_helper.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QWidget \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QHash \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QEvent \
+		widgetdata.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QRubberBand \
+		frameless_helper.h \
+		cursorposcalculator.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QPoint \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QRect \
+		frameless_helper.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib frameless_helper.h -o moc_frameless_helper.cpp
 
 moc_graphicsview.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsView \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
@@ -77,6 +106,7 @@ moc_mainwindow.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/Q
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItem \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QGraphicsItemAnimation \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QDesktopWidget \
 		mainwindow.h \
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
@@ -99,6 +129,262 @@ moc_sorter.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject 
 		moc_predefs.h \
 		/usr/local/Cellar/qt/5.9.1/bin/moc
 	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib sorter.h -o moc_sorter.cpp
+
+moc_qtmaterialappbar.cpp: components/qtmaterialappbar.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialappbar.h -o moc_qtmaterialappbar.cpp
+
+moc_qtmaterialautocomplete.cpp: components/qtmaterialtextfield.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		components/qtmaterialautocomplete.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialautocomplete.h -o moc_qtmaterialautocomplete.cpp
+
+moc_qtmaterialautocomplete_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		components/qtmaterialautocomplete.h \
+		components/qtmaterialtextfield.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		components/qtmaterialautocomplete_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialautocomplete_internal.h -o moc_qtmaterialautocomplete_internal.cpp
+
+moc_qtmaterialavatar.cpp: components/qtmaterialavatar.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialavatar.h -o moc_qtmaterialavatar.cpp
+
+moc_qtmaterialbadge.cpp: components/qtmaterialbadge.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialbadge.h -o moc_qtmaterialbadge.cpp
+
+moc_qtmaterialcheckbox.cpp: components/qtmaterialcheckbox.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialcheckbox.h -o moc_qtmaterialcheckbox.cpp
+
+moc_qtmaterialcircularprogress.cpp: components/qtmaterialcircularprogress.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialcircularprogress.h -o moc_qtmaterialcircularprogress.cpp
+
+moc_qtmaterialcircularprogress_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
+		components/qtmaterialcircularprogress.h \
+		components/qtmaterialcircularprogress_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialcircularprogress_internal.h -o moc_qtmaterialcircularprogress_internal.cpp
+
+moc_qtmaterialdialog.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialdialog.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialdialog.h -o moc_qtmaterialdialog.cpp
+
+moc_qtmaterialdialog_internal.cpp: components/qtmaterialdialog_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialdialog_internal.h -o moc_qtmaterialdialog_internal.cpp
+
+moc_qtmaterialdrawer.cpp: components/qtmaterialdrawer.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialdrawer.h -o moc_qtmaterialdrawer.cpp
+
+moc_qtmaterialdrawer_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		components/qtmaterialdrawer_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialdrawer_internal.h -o moc_qtmaterialdrawer_internal.cpp
+
+moc_qtmaterialfab.cpp: components/qtmaterialraisedbutton.h \
+		components/qtmaterialflatbutton.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialfab.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialfab.h -o moc_qtmaterialfab.cpp
+
+moc_qtmaterialflatbutton.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialflatbutton.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialflatbutton.h -o moc_qtmaterialflatbutton.cpp
+
+moc_qtmaterialflatbutton_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		components/qtmaterialflatbutton_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialflatbutton_internal.h -o moc_qtmaterialflatbutton_internal.cpp
+
+moc_qtmaterialiconbutton.cpp: components/qtmaterialiconbutton.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialiconbutton.h -o moc_qtmaterialiconbutton.cpp
+
+moc_qtmaterialmenu.cpp: components/qtmaterialmenu.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialmenu.h -o moc_qtmaterialmenu.cpp
+
+moc_qtmaterialprogress.cpp: components/qtmaterialprogress.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialprogress.h -o moc_qtmaterialprogress.cpp
+
+moc_qtmaterialprogress_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
+		components/qtmaterialprogress.h \
+		components/qtmaterialprogress_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialprogress_internal.h -o moc_qtmaterialprogress_internal.cpp
+
+moc_qtmaterialradiobutton.cpp: components/qtmaterialradiobutton.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialradiobutton.h -o moc_qtmaterialradiobutton.cpp
+
+moc_qtmaterialraisedbutton.cpp: components/qtmaterialflatbutton.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialraisedbutton.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialraisedbutton.h -o moc_qtmaterialraisedbutton.cpp
+
+moc_qtmaterialscrollbar.cpp: components/qtmaterialscrollbar.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialscrollbar.h -o moc_qtmaterialscrollbar.cpp
+
+moc_qtmaterialscrollbar_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		components/qtmaterialscrollbar.h \
+		components/qtmaterialscrollbar_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialscrollbar_internal.h -o moc_qtmaterialscrollbar_internal.cpp
+
+moc_qtmaterialslider.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialslider.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialslider.h -o moc_qtmaterialslider.cpp
+
+moc_qtmaterialslider_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		components/qtmaterialslider_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialslider_internal.h -o moc_qtmaterialslider_internal.cpp
+
+moc_qtmaterialsnackbar.cpp: components/qtmaterialsnackbar.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialsnackbar.h -o moc_qtmaterialsnackbar.cpp
+
+moc_qtmaterialsnackbar_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimer \
+		components/qtmaterialsnackbar_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialsnackbar_internal.h -o moc_qtmaterialsnackbar_internal.cpp
+
+moc_qtmaterialtabs.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QIcon \
+		components/qtmaterialtabs.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtabs.h -o moc_qtmaterialtabs.cpp
+
+moc_qtmaterialtabs_internal.cpp: components/qtmaterialflatbutton.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		components/qtmaterialtabs_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtabs_internal.h -o moc_qtmaterialtabs_internal.cpp
+
+moc_qtmaterialtextfield.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		components/qtmaterialtextfield.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtextfield.h -o moc_qtmaterialtextfield.cpp
+
+moc_qtmaterialtextfield_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QStateMachine \
+		components/qtmaterialtextfield.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		components/qtmaterialtextfield_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtextfield_internal.h -o moc_qtmaterialtextfield_internal.cpp
+
+moc_qtmaterialtoggle.cpp: components/qtmaterialtoggle.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtoggle.h -o moc_qtmaterialtoggle.cpp
+
+moc_qtmaterialtoggle_internal.cpp: components/qtmaterialtoggle_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/qtmaterialtoggle_internal.h -o moc_qtmaterialtoggle_internal.cpp
+
+moc_qtmaterialcheckable.cpp: components/lib/qtmaterialcheckable.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialcheckable.h -o moc_qtmaterialcheckable.cpp
+
+moc_qtmaterialcheckable_internal.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QIcon \
+		components/lib/qtmaterialcheckable_internal.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialcheckable_internal.h -o moc_qtmaterialcheckable_internal.cpp
+
+moc_qtmaterialoverlaywidget.cpp: components/lib/qtmaterialoverlaywidget.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialoverlaywidget.h -o moc_qtmaterialoverlaywidget.cpp
+
+moc_qtmaterialripple.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QParallelAnimationGroup \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QEasingCurve \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QPropertyAnimation \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QPoint \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QBrush \
+		components/lib/qtmaterialripple.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialripple.h -o moc_qtmaterialripple.cpp
+
+moc_qtmaterialrippleoverlay.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QPainterPath \
+		components/lib/qtmaterialoverlaywidget.h \
+		components/lib/qtmaterialrippleoverlay.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialrippleoverlay.h -o moc_qtmaterialrippleoverlay.cpp
+
+moc_qtmaterialstatetransition.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QAbstractTransition \
+		components/lib/qtmaterialstatetransitionevent.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QEvent \
+		components/lib/qtmaterialstatetransition.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialstatetransition.h -o moc_qtmaterialstatetransition.cpp
+
+moc_qtmaterialstyle.cpp: components/lib/qtmaterialstyle_p.h \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QtGlobal \
+		components/lib/qtmaterialstyle.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialstyle.h -o moc_qtmaterialstyle.cpp
+
+moc_qtmaterialtheme.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QIcon \
+		components/lib/qtmaterialtheme.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib components/lib/qtmaterialtheme.h -o moc_qtmaterialtheme.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:

@@ -24,10 +24,11 @@ class PainterPalette: public QWidget {
     
     // end with -1
 public:
+    int from, to;
     std::vector<int> dataSource;
     void paintEvent(QPaintEvent *event);
-    void drawCircle();
-    void timerEvent(QTimerEvent *event);
+//    void drawCircle();
+//    void timerEvent(QTimerEvent *event);
 };
 
 #endif /* painterpalette_h */

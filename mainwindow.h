@@ -8,6 +8,25 @@
 #include <QSlider>
 #include "sorterfactory.h"
 #include "painterpalette.h"
+#include <qtmaterialradiobutton.h>
+#include <qtmaterialflatbutton.h>
+#include <qtmaterialraisedbutton.h>
+#include <QDesktopWidget>
+
+
+enum ResizeRegion
+{
+    Default,
+    North,
+    NorthEast,
+    East,
+    SouthEast,
+    South,
+    SouthWest,
+    West,
+    NorthWest
+};
+
 
 class MainWindow: public QMainWindow {
     Q_OBJECT
@@ -25,17 +44,37 @@ public:
     
     vector<Sorter *> sorters;
     QButtonGroup *sorterGroup;
-    QSlider *speedSlider;
+//    QSlider *speedSlider;
+    QAbstractSlider *speedSlider;
     QButtonGroup *sizeGroup;
     QPushButton *restartButton;
     PainterPalette *painterPalette;
     
+protected:
+//    void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+//    void mouseReleaseEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+//    void mouseMoveEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+//    void handleResize();
+//    void setResizeCursor();
+//    ResizeRegion getResizeRegion(QPoint clientPos);
+//    void handleMove(QPoint pt);
+//    void setResizeCursor(ResizeRegion region);
+    
 private:
     // generate random dataset
     void shuffle(vector<int> &);
+    vector<QtMaterialRaisedButton *> sizeButtons;
     // swap two frame in layout
 //    void swap(int i, int j);
     QHBoxLayout *bottomLayout;
+    
+    bool m_drag, m_move;
+    QPoint dragPos, resizeDownPos;
+    const int resizeBorderWidth = 5;
+    ResizeRegion resizeRegion;
+    QRect mouseDownRect;
+    QDesktopWidget *desktop;
+    
 signals:
     void sorterTypeWillChange(SorterType);
     void sizeWillChange(int);
@@ -43,6 +82,7 @@ signals:
 public slots:
     void setSpeed(int);
     void setSorterType(int);
+//    void setSize(int);
     void setSize(int);
     void swapFrame(int, int);
     void restart();

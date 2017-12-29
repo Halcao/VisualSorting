@@ -51,18 +51,18 @@ void GraphicsView::frameChanged(int order) {
     this->update();
 }
 
-QGraphicsItemAnimation animationGenerator(QGraphicsEllipseItem *ball, int i, int j) {
-    QGraphicsItemAnimation *animation = new QGraphicsItemAnimation;
-    QTimeLine *timer = new QTimeLine(1000);
-    animation->setItem(ball);
-    animation->setTimeLine(timer);
-    
-    for(int i = 0; i < 600; ++i) {
-        double angle = M_PI * (600-i) / 600.0;
-        qreal x = 150 + 150*qCos(angle);
-        qreal y = 150 - 50*qSin(angle);
-        
-        animation->setPosAt(sqrt(i)/sqrt(600.0), QPointF(x, y));
-    }
-    return animation;
-}
+//QGraphicsItemAnimation animationGenerator(QGraphicsEllipseItem *ball, int i, int j) {
+//    QGraphicsItemAnimation *animation = new QGraphicsItemAnimation;
+//    QTimeLine *timer = new QTimeLine(1000);
+//    animation->setItem(ball);
+//    animation->setTimeLine(timer);
+//    
+//    for(int i = 0; i < 600; ++i) {
+//        double angle = M_PI * (600-i) / 600.0;
+//        qreal x = 150 + 150*qCos(angle);
+//        qreal y = 150 - 50*qSin(angle);
+//        
+//        animation->setPosAt(sqrt(i)/sqrt(600.0), QPointF(x, y));
+//    }
+//    return animation;
+//}

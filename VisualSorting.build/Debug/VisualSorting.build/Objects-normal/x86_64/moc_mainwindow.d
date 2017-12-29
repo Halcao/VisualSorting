@@ -121,4 +121,15 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qgraphicsitemanimation.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qtimeline.h \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeasingcurve.h
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeasingcurve.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialradiobutton.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialflatbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/lib/qtmaterialtheme.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QIcon \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialraisedbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QDesktopWidget \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qdesktopwidget.h

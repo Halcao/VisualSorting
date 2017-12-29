@@ -5,545 +5,3062 @@
 	};
 	objectVersion = 46;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		70E2801BAAC800E2BC18FF57 /* Qt Preprocess */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */;
-			buildPhases = (
-				5E618435888B9D49F8540165 /* Qt Qmake */,
-				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
-			);
-			dependencies = (
-			);
-			name = "Qt Preprocess";
-			productName = "Qt Preprocess";
+		5E618435888B9D49F8540165 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Qmake";
+			shellPath = "/bin/sh";
+			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = "0";
 		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 11F76B65BE080190A4D69131 /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
-		1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 011543DD36F78B4000FBAB3C /* main.cpp */; settings = {ATTRIBUTES = (); }; };
-		31F5EE318CBBDCCACCCA3491 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */; };
-		5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 774A533A100DCD37D8D9562D /* sorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A756C037F21AC304DE015D6 /* bubblesorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		5DB5A69BDE3FAA62D7A45C5F /* heapsorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		6FD4F174EE6AEFBB4F812B27 /* quicksorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		76A7E972FABC8AE5E7849B37 /* moc_graphicsview.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */; settings = {ATTRIBUTES = (); }; };
-		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
-		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
-		8E89D0C5DF35140764407102 /* graphicsview.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */; settings = {ATTRIBUTES = (); }; };
-		982433B80F93E107E9C92719 /* moc_bubblesorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 29CD04F802630A54ABBFAE7F /* QtGui.framework */; };
-		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
-		B4102F8EE02DA5955BF48207 /* moc_painterpalette.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */; settings = {ATTRIBUTES = (); }; };
-		B537134372803027546F936E /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 26FB077F01E285C42AEF1627 /* QtWidgets.framework */; };
-		BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6DA2D93DDDA677342902519D /* sorterfactory.cpp */; settings = {ATTRIBUTES = (); }; };
-		E2D2D0235D4878E5F10522A5 /* moc_sorter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */; settings = {ATTRIBUTES = (); }; };
-		E36803F11D945A166177CCDC /* painterpalette.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */; settings = {ATTRIBUTES = (); }; };
-		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		369C37001FE5AB8700CABD4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70E2801BAAC800E2BC18FF57;
-			remoteInfo = "Qt Preprocess";
+		3A756C037F21AC304DE015D6 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp";
+			name = "bubblesorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		99542592E9780B9225F24AA8 /* Embed Frameworks */ = {
+		58F0D288270463BDD94EFFD4 = {
+			fileRef = "3A756C037F21AC304DE015D6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DD7F2987D209C59BBA0A3AF8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/cursorposcalculator.cpp";
+			name = "cursorposcalculator.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DCAF757D51BE79F01DD08C92 = {
+			fileRef = "DD7F2987D209C59BBA0A3AF8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		12AC89B5F37C9F175105F009 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/frameless_helper.cpp";
+			name = "frameless_helper.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		00EEC0CBE485B0943E0F85E2 = {
+			fileRef = "12AC89B5F37C9F175105F009";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		04C578D7023E49C815E4F498 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/framelesshelper.cpp";
+			name = "framelesshelper.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E4D5D5AAA2642E53BC7B6D13 = {
+			fileRef = "04C578D7023E49C815E4F498";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F5C8D40E6026CF6E65A1D295 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.cpp";
+			name = "graphicsview.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8E89D0C5DF35140764407102 = {
+			fileRef = "F5C8D40E6026CF6E65A1D295";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E8F7DB9BF993926E9DBE291F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.cpp";
+			name = "heapsorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5DB5A69BDE3FAA62D7A45C5F = {
+			fileRef = "E8F7DB9BF993926E9DBE291F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		011543DD36F78B4000FBAB3C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/main.cpp";
+			name = "main.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1B031F485D4600B74FADEA8A = {
+			fileRef = "011543DD36F78B4000FBAB3C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		5F56B23AA47B4EC45E7B970A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.cpp";
+			name = "mainwindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1656485E38240C18B7140267 = {
+			fileRef = "5F56B23AA47B4EC45E7B970A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4F14CD6FDB67F1BBD96DF9DE = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.cpp";
+			name = "painterpalette.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E36803F11D945A166177CCDC = {
+			fileRef = "4F14CD6FDB67F1BBD96DF9DE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C0C2BF1C54652C8914363CF2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/qrc_resources.cpp";
+			name = "qrc_resources.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CF74E3F8E4B101D9448E028F = {
+			fileRef = "C0C2BF1C54652C8914363CF2";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3D1FD05EE23C07E33CF4EC43 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.cpp";
+			name = "quicksorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6FD4F174EE6AEFBB4F812B27 = {
+			fileRef = "3D1FD05EE23C07E33CF4EC43";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		774A533A100DCD37D8D9562D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.cpp";
+			name = "sorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5320B778B5213ACAE96A609C = {
+			fileRef = "774A533A100DCD37D8D9562D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		6DA2D93DDDA677342902519D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.cpp";
+			name = "sorterfactory.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DF56EF2890B3AE4BB9748D43 = {
+			fileRef = "6DA2D93DDDA677342902519D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		09C1276339CB7A0EB12EFFEF = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/widgetdata.cpp";
+			name = "widgetdata.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		06603F2F742F71846CC047EE = {
+			fileRef = "09C1276339CB7A0EB12EFFEF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CC39C49882889FD572B70CBF = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialappbar.cpp";
+			name = "qtmaterialappbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0552517A304ECDCFD6CA4AEE = {
+			fileRef = "CC39C49882889FD572B70CBF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		5F5FBD89AD73D08572E8A41A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialautocomplete.cpp";
+			name = "qtmaterialautocomplete.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C30C53CD118C2751EADB15DA = {
+			fileRef = "5F5FBD89AD73D08572E8A41A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F73B70CAFD94D27179B0983D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialautocomplete_internal.cpp";
+			name = "qtmaterialautocomplete_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		82D9F53159ECC6F4F3873D62 = {
+			fileRef = "F73B70CAFD94D27179B0983D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		EFC0CBA11AFFEF675A54B9E0 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialavatar.cpp";
+			name = "qtmaterialavatar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		98F75ABC1AE819D5ED77CD5C = {
+			fileRef = "EFC0CBA11AFFEF675A54B9E0";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4005B7A5B8684262D212F867 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialbadge.cpp";
+			name = "qtmaterialbadge.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0358C6CBE71CAD954E411E01 = {
+			fileRef = "4005B7A5B8684262D212F867";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		12E7AC31A978131D5AEEDB93 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcheckbox.cpp";
+			name = "qtmaterialcheckbox.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C18C3F3B62AFE2FBE5E7483E = {
+			fileRef = "12E7AC31A978131D5AEEDB93";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F25A21037722FB261271D287 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcircularprogress.cpp";
+			name = "qtmaterialcircularprogress.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FA84816CC2D7A7040FDC185B = {
+			fileRef = "F25A21037722FB261271D287";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8296EA1DAE6FD83DF1572F47 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcircularprogress_internal.cpp";
+			name = "qtmaterialcircularprogress_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9BC82EE508C0A4BD177AF5FA = {
+			fileRef = "8296EA1DAE6FD83DF1572F47";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		95036D1B8CEB5789D7626827 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdialog.cpp";
+			name = "qtmaterialdialog.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D5F37CC36ACBF92AD329E038 = {
+			fileRef = "95036D1B8CEB5789D7626827";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		34FD9685860711C497B73D37 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdialog_internal.cpp";
+			name = "qtmaterialdialog_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		531428F39839ABD0C864FBCC = {
+			fileRef = "34FD9685860711C497B73D37";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		77E040A3E6B9F55453FFE1A8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdrawer.cpp";
+			name = "qtmaterialdrawer.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FA78B70465199B6837A82026 = {
+			fileRef = "77E040A3E6B9F55453FFE1A8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		96EEFBA7C8F0D8CCAE3DCE90 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdrawer_internal.cpp";
+			name = "qtmaterialdrawer_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C2A0FB41E5EDA3971CBA32CB = {
+			fileRef = "96EEFBA7C8F0D8CCAE3DCE90";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		448355947162162842426661 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialfab.cpp";
+			name = "qtmaterialfab.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E20514EA9E2FB56152FFAC9D = {
+			fileRef = "448355947162162842426661";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		9FA27BA32D55F67B1C5B4773 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialflatbutton.cpp";
+			name = "qtmaterialflatbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4024000FAFB69707D96B4242 = {
+			fileRef = "9FA27BA32D55F67B1C5B4773";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		7380BDBC6B0F2B8144CB24C5 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialflatbutton_internal.cpp";
+			name = "qtmaterialflatbutton_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A16D77E37CC9FCD26AABB465 = {
+			fileRef = "7380BDBC6B0F2B8144CB24C5";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D98A5968F7BA4CCCEB6933C9 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialiconbutton.cpp";
+			name = "qtmaterialiconbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		95E3C335F3C9BF27E9127E93 = {
+			fileRef = "D98A5968F7BA4CCCEB6933C9";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F54863729DF7BF9CE09856E6 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallist.cpp";
+			name = "qtmateriallist.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B877DDAB5749ABDF9F002DC2 = {
+			fileRef = "F54863729DF7BF9CE09856E6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2334CAF4103CE850EFDC6D33 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallistitem.cpp";
+			name = "qtmateriallistitem.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6C05934CFA7D552193B35AAB = {
+			fileRef = "2334CAF4103CE850EFDC6D33";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CEAE1CF865F689F897FA1FCA = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialmenu.cpp";
+			name = "qtmaterialmenu.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6531F8E64D39388766E52060 = {
+			fileRef = "CEAE1CF865F689F897FA1FCA";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		19CBA1EBCCCB3028E6A9FDDB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialmenu_internal.cpp";
+			name = "qtmaterialmenu_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		932806A20C68B36BCC6AD836 = {
+			fileRef = "19CBA1EBCCCB3028E6A9FDDB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		85F3DF17DF37F0ED9360A623 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialpaper.cpp";
+			name = "qtmaterialpaper.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7A97886FE395F91AF5CCCEDE = {
+			fileRef = "85F3DF17DF37F0ED9360A623";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8C8A3D21C31F4F8ACF57BA2A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialprogress.cpp";
+			name = "qtmaterialprogress.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CB4FAB9DA0D4077090CB4E8E = {
+			fileRef = "8C8A3D21C31F4F8ACF57BA2A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		69D8D473517210AC3B88D11F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialprogress_internal.cpp";
+			name = "qtmaterialprogress_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F6C4CA6790896A5F319C58A9 = {
+			fileRef = "69D8D473517210AC3B88D11F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E80446D062008BC50B423557 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialradiobutton.cpp";
+			name = "qtmaterialradiobutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CB4448ECDC118558FF232289 = {
+			fileRef = "E80446D062008BC50B423557";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3918653652FCD28A66A20507 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialraisedbutton.cpp";
+			name = "qtmaterialraisedbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		938C451E21D977AD31AA26CB = {
+			fileRef = "3918653652FCD28A66A20507";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1E49E24FC2CBC0AAE6EA6D33 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialscrollbar.cpp";
+			name = "qtmaterialscrollbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CD04E72AD282A6B6CED93A38 = {
+			fileRef = "1E49E24FC2CBC0AAE6EA6D33";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		174A05E37985191890A9B2BB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialscrollbar_internal.cpp";
+			name = "qtmaterialscrollbar_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2951A1BBE21367D1D482BCB3 = {
+			fileRef = "174A05E37985191890A9B2BB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		51345D7AFACDF958A57970B2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialslider.cpp";
+			name = "qtmaterialslider.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1F142F3CC06D051B14DE5324 = {
+			fileRef = "51345D7AFACDF958A57970B2";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		BCA6F91479A5CC589E161236 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialslider_internal.cpp";
+			name = "qtmaterialslider_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8DC6B27C5004FE1FAFABE0C5 = {
+			fileRef = "BCA6F91479A5CC589E161236";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1916A01976E1304771048AE8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialsnackbar.cpp";
+			name = "qtmaterialsnackbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2F9E86E6316B0B8871A72BAA = {
+			fileRef = "1916A01976E1304771048AE8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		5E0378C10055F38AB1CE3AEF = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialsnackbar_internal.cpp";
+			name = "qtmaterialsnackbar_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4C2B173D0C3B94C0DD79CB67 = {
+			fileRef = "5E0378C10055F38AB1CE3AEF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		85647A23E479330CEE0D6AA8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtable.cpp";
+			name = "qtmaterialtable.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E9C17C3B14E019BB3B05480A = {
+			fileRef = "85647A23E479330CEE0D6AA8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		91125DD7E3812E1EF34A0081 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtabs.cpp";
+			name = "qtmaterialtabs.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0586D6F20AA254DF41139F78 = {
+			fileRef = "91125DD7E3812E1EF34A0081";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		AE43CB51CA554B718B4E9021 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtabs_internal.cpp";
+			name = "qtmaterialtabs_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8112B42837ACC1A6B25A9213 = {
+			fileRef = "AE43CB51CA554B718B4E9021";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C6E5E92DA721E828A133050C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtextfield.cpp";
+			name = "qtmaterialtextfield.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		8609F0F2B33E3C7E1C6F0294 = {
+			fileRef = "C6E5E92DA721E828A133050C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		9C6804C521DA5347A6525063 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtextfield_internal.cpp";
+			name = "qtmaterialtextfield_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E5AFE74F7776DE1C32E7046E = {
+			fileRef = "9C6804C521DA5347A6525063";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0505D40AC7389753B6D02320 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtoggle.cpp";
+			name = "qtmaterialtoggle.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4B5BC7611BBD6C9FD3D423FD = {
+			fileRef = "0505D40AC7389753B6D02320";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FB6FAF0A395A1A63B3EE7231 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtoggle_internal.cpp";
+			name = "qtmaterialtoggle_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D4817607E0B8D3929FD55573 = {
+			fileRef = "FB6FAF0A395A1A63B3EE7231";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A627CE0258E16AAE6A5DB17C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/layouts/qtmaterialsnackbarlayout.cpp";
+			name = "qtmaterialsnackbarlayout.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9119662F5B22C9ECE6B5AA31 = {
+			fileRef = "A627CE0258E16AAE6A5DB17C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FB63A77EB0118A31BEB4AAD8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable.cpp";
+			name = "qtmaterialcheckable.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7BD27A5B65D8BD2BE0A2689E = {
+			fileRef = "FB63A77EB0118A31BEB4AAD8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		866E918203E04317B97A59B3 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable_internal.cpp";
+			name = "qtmaterialcheckable_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A63B7034920DEA4BD5E07E20 = {
+			fileRef = "866E918203E04317B97A59B3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C4600C45E865A5858805CB92 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialoverlaywidget.cpp";
+			name = "qtmaterialoverlaywidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3982083714D05F7497F7ECEF = {
+			fileRef = "C4600C45E865A5858805CB92";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DE4A95A3694405940F60A200 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialripple.cpp";
+			name = "qtmaterialripple.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		216614AF714E99F0A21C009B = {
+			fileRef = "DE4A95A3694405940F60A200";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3BFDEAE168546360AC703033 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialrippleoverlay.cpp";
+			name = "qtmaterialrippleoverlay.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E5FB4B9B7BCF80B3F8E06B6E = {
+			fileRef = "3BFDEAE168546360AC703033";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8FED6DBABF8DF0C2D61D4FED = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstatetransition.cpp";
+			name = "qtmaterialstatetransition.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9C3AEB9C5B0C81B03AC0A092 = {
+			fileRef = "8FED6DBABF8DF0C2D61D4FED";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		24B9DB177DB3BF0F25FB13C7 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstyle.cpp";
+			name = "qtmaterialstyle.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D08A17EE4EFF92362766BA63 = {
+			fileRef = "24B9DB177DB3BF0F25FB13C7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		991FEF48AB6F57A3F98D770A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialtheme.cpp";
+			name = "qtmaterialtheme.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1E5BF76341F1BA16F04F268C = {
+			fileRef = "991FEF48AB6F57A3F98D770A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B8DDCC42EC5A585907F73C98 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_bubblesorter.cpp";
+			name = "moc_bubblesorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		982433B80F93E107E9C92719 = {
+			fileRef = "B8DDCC42EC5A585907F73C98";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0011B9157843F5F730C666F3 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_frameless_helper.cpp";
+			name = "moc_frameless_helper.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0117B69592B8D83B555F5967 = {
+			fileRef = "0011B9157843F5F730C666F3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0787DB73F6AB6AB497185B14 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_graphicsview.cpp";
+			name = "moc_graphicsview.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		76A7E972FABC8AE5E7849B37 = {
+			fileRef = "0787DB73F6AB6AB497185B14";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		51A6B63996F7C35CCBE523AA = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_mainwindow.cpp";
+			name = "moc_mainwindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		BC263ED4E80E84255DE99B82 = {
+			fileRef = "51A6B63996F7C35CCBE523AA";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FDAB802D77F1881C06C89DDB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_painterpalette.cpp";
+			name = "moc_painterpalette.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B4102F8EE02DA5955BF48207 = {
+			fileRef = "FDAB802D77F1881C06C89DDB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		050F87F9E1117BCBE01154A1 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_sorter.cpp";
+			name = "moc_sorter.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E2D2D0235D4878E5F10522A5 = {
+			fileRef = "050F87F9E1117BCBE01154A1";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8AB6916118C59E3B2A084EF6 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialappbar.cpp";
+			name = "moc_qtmaterialappbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2743371D30AA3E4C40C22315 = {
+			fileRef = "8AB6916118C59E3B2A084EF6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A234245CBE37314B7514D250 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialautocomplete.cpp";
+			name = "moc_qtmaterialautocomplete.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		525304B1A3B83649CA82ABB2 = {
+			fileRef = "A234245CBE37314B7514D250";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2F102D59E640022AD4249171 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialautocomplete_internal.cpp";
+			name = "moc_qtmaterialautocomplete_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		ACDD7290253FA81962A231FB = {
+			fileRef = "2F102D59E640022AD4249171";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		9EB72204D8F8883E87E8B755 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialavatar.cpp";
+			name = "moc_qtmaterialavatar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A524CED280AD9E0F349261C6 = {
+			fileRef = "9EB72204D8F8883E87E8B755";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		85A7DAB1B93DE3A34F0444E0 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialbadge.cpp";
+			name = "moc_qtmaterialbadge.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C4208253798399911B0C9092 = {
+			fileRef = "85A7DAB1B93DE3A34F0444E0";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		AFCDB08E3DC3D6BC095BAA2B = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialcheckbox.cpp";
+			name = "moc_qtmaterialcheckbox.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A3DBE316F0A9DF41CA13609F = {
+			fileRef = "AFCDB08E3DC3D6BC095BAA2B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2DB5D96D5D6BD79D807B361D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialcircularprogress.cpp";
+			name = "moc_qtmaterialcircularprogress.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6ACC40D747CD8E2F3E2711DA = {
+			fileRef = "2DB5D96D5D6BD79D807B361D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FBB3F100D975FDF2C068D511 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialcircularprogress_internal.cpp";
+			name = "moc_qtmaterialcircularprogress_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		444FE19928DCE012DECEED0A = {
+			fileRef = "FBB3F100D975FDF2C068D511";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F091B8B4919ADDB3E972A8DE = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialdialog.cpp";
+			name = "moc_qtmaterialdialog.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7D6C67DD9CB55101DA053227 = {
+			fileRef = "F091B8B4919ADDB3E972A8DE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3A25C2BBD184FFDFC692A309 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialdialog_internal.cpp";
+			name = "moc_qtmaterialdialog_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		01F64FB1FF24D5BEDE29B54E = {
+			fileRef = "3A25C2BBD184FFDFC692A309";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C1FC1832F07D34A431BC848B = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialdrawer.cpp";
+			name = "moc_qtmaterialdrawer.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F5C219D3C38476A09A4D7AAD = {
+			fileRef = "C1FC1832F07D34A431BC848B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0FED49C1FA5030D2E9D6E276 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialdrawer_internal.cpp";
+			name = "moc_qtmaterialdrawer_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		47E9CCE0EDA40CCE514EA9FF = {
+			fileRef = "0FED49C1FA5030D2E9D6E276";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E4FC5290B9D2228548AFCCC3 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialfab.cpp";
+			name = "moc_qtmaterialfab.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9BEFFE275D8BE4D6BD92638B = {
+			fileRef = "E4FC5290B9D2228548AFCCC3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		270967C9DED684BFF6EC3E7D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialflatbutton.cpp";
+			name = "moc_qtmaterialflatbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		17628AEC29DB5144ABF2AE51 = {
+			fileRef = "270967C9DED684BFF6EC3E7D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4FD45C68863F0E29231EE9BA = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialflatbutton_internal.cpp";
+			name = "moc_qtmaterialflatbutton_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		386A9C16F53B78F71FC30A93 = {
+			fileRef = "4FD45C68863F0E29231EE9BA";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		55AFEF3842105B8B243F9717 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialiconbutton.cpp";
+			name = "moc_qtmaterialiconbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		C88AB49A067EA6693D37E90D = {
+			fileRef = "55AFEF3842105B8B243F9717";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		6381AF2EEA3E84CD63463637 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialmenu.cpp";
+			name = "moc_qtmaterialmenu.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CD5F23B0AA4B5C59E4334D9C = {
+			fileRef = "6381AF2EEA3E84CD63463637";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CE0C16126E93C9205C65FA8A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialprogress.cpp";
+			name = "moc_qtmaterialprogress.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6B32751788A6323DED4F5704 = {
+			fileRef = "CE0C16126E93C9205C65FA8A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		29BCAC9A01EA8F52903BA254 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialprogress_internal.cpp";
+			name = "moc_qtmaterialprogress_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		35E5E490980C173255B5068A = {
+			fileRef = "29BCAC9A01EA8F52903BA254";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4006451F95C34CDCCB8A3298 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialradiobutton.cpp";
+			name = "moc_qtmaterialradiobutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6EEC610A6DDA1E086F09A684 = {
+			fileRef = "4006451F95C34CDCCB8A3298";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DD3C8E292C869512AF4F77BA = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialraisedbutton.cpp";
+			name = "moc_qtmaterialraisedbutton.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D1B904CA8DDFF8C46CEE3D8E = {
+			fileRef = "DD3C8E292C869512AF4F77BA";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3F0BDA61BBAE63DB8835F2EF = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialscrollbar.cpp";
+			name = "moc_qtmaterialscrollbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0A243A4AD522C5A51323CC8F = {
+			fileRef = "3F0BDA61BBAE63DB8835F2EF";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B30C01A378461239E085173A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialscrollbar_internal.cpp";
+			name = "moc_qtmaterialscrollbar_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		AAA6CA9535F53688ECA7578B = {
+			fileRef = "B30C01A378461239E085173A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3977F5A307FF1EE823C0346F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialslider.cpp";
+			name = "moc_qtmaterialslider.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E9D3F12C20D124164F8D4247 = {
+			fileRef = "3977F5A307FF1EE823C0346F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		178D5B6EEA75123336919E7F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialslider_internal.cpp";
+			name = "moc_qtmaterialslider_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9483B3AA68FC81B5A6A558DF = {
+			fileRef = "178D5B6EEA75123336919E7F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		7EF0CABC5ED117DBA4D1478B = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialsnackbar.cpp";
+			name = "moc_qtmaterialsnackbar.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4862A2060D9A866A7DD07A93 = {
+			fileRef = "7EF0CABC5ED117DBA4D1478B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		15D37431513E7EA3B2634E4C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialsnackbar_internal.cpp";
+			name = "moc_qtmaterialsnackbar_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		32754BBC5EF61A89645FE128 = {
+			fileRef = "15D37431513E7EA3B2634E4C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0C02A4D7F2478973E5A669B2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtabs.cpp";
+			name = "moc_qtmaterialtabs.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3A42ED846A2E3DA7F8065C14 = {
+			fileRef = "0C02A4D7F2478973E5A669B2";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		89F054668B6F08F99CC51F55 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtabs_internal.cpp";
+			name = "moc_qtmaterialtabs_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		406E25B437E85FF007122EEA = {
+			fileRef = "89F054668B6F08F99CC51F55";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		99FC66B004E935C59EDF37DB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtextfield.cpp";
+			name = "moc_qtmaterialtextfield.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		2E70ECD1A93CD147459D993A = {
+			fileRef = "99FC66B004E935C59EDF37DB";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2179002A8C34F0DC24AC5509 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtextfield_internal.cpp";
+			name = "moc_qtmaterialtextfield_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		4E72C68D9292239D4DB04B34 = {
+			fileRef = "2179002A8C34F0DC24AC5509";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DBFC1FD083A3F4C03D0B0A85 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtoggle.cpp";
+			name = "moc_qtmaterialtoggle.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		451B179EFD6684F7A435925F = {
+			fileRef = "DBFC1FD083A3F4C03D0B0A85";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1ED361C8F0BCE98DB95A949D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtoggle_internal.cpp";
+			name = "moc_qtmaterialtoggle_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		641331CB9F6CC90532248F07 = {
+			fileRef = "1ED361C8F0BCE98DB95A949D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F090B12215EAF200BFEF6047 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialcheckable.cpp";
+			name = "moc_qtmaterialcheckable.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A4B19CF557DD78F537643C20 = {
+			fileRef = "F090B12215EAF200BFEF6047";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8C8AA028595CEFCFAC937DF6 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialcheckable_internal.cpp";
+			name = "moc_qtmaterialcheckable_internal.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3A23285251A8F5ED72F7E675 = {
+			fileRef = "8C8AA028595CEFCFAC937DF6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		69F6E6145EB7DC41BBA7F7B5 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialoverlaywidget.cpp";
+			name = "moc_qtmaterialoverlaywidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		888955CD6053A1BCB78F9390 = {
+			fileRef = "69F6E6145EB7DC41BBA7F7B5";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		273EBF753D67F5CC1868D62E = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialripple.cpp";
+			name = "moc_qtmaterialripple.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A95594BB79B04DD490D46615 = {
+			fileRef = "273EBF753D67F5CC1868D62E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D25FE9D725EAB050E375BAB7 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialrippleoverlay.cpp";
+			name = "moc_qtmaterialrippleoverlay.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FDF84D62F2A77A6B338951C9 = {
+			fileRef = "D25FE9D725EAB050E375BAB7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		ABC9F50045DC07CAC6670057 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialstatetransition.cpp";
+			name = "moc_qtmaterialstatetransition.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DF23EB59C5DC0862B9337ECC = {
+			fileRef = "ABC9F50045DC07CAC6670057";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1D552DC35E9D0A2BEF210526 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialstyle.cpp";
+			name = "moc_qtmaterialstyle.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D576E70275ADFDA0633F4D43 = {
+			fileRef = "1D552DC35E9D0A2BEF210526";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		9FBBAD8290ECC2F5C5E75A02 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_qtmaterialtheme.cpp";
+			name = "moc_qtmaterialtheme.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		172D5B746DF929B5A6968C0E = {
+			fileRef = "9FBBAD8290ECC2F5C5E75A02";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C72BDEB5121EE5F0A622CE7D = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h";
+			name = "bubblesorter.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		58852B8578D355B9B37F5A63 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/cursorposcalculator.h";
+			name = "cursorposcalculator.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		3D1198E08DC849C6FFCCB2F8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/frameless_helper.h";
+			name = "frameless_helper.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		8EEEF79DAFBABB53DF208546 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.h";
+			name = "graphicsview.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		36DE5AA569AA3CBD357B1457 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.h";
+			name = "heapsorter.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		D51401F310A9A8B9CD7A71F1 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h";
+			name = "mainwindow.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		15906CEB340F31934822E0C2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.h";
+			name = "painterpalette.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7A8B3DAC38044D135970BDD9 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.h";
+			name = "quicksorter.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		FAA80243D4BCDE38A456E040 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.h";
+			name = "sorter.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		62AEBC9D79C4C5FC976B5D27 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.h";
+			name = "sorterfactory.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		00A950D27EA712DAADF227A2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/widgetdata.h";
+			name = "widgetdata.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		9E2B04E1289D9E0DADC5ED6A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialappbar.h";
+			name = "qtmaterialappbar.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6A2E2CCE07E8589DA3137CC0 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialappbar_p.h";
+			name = "qtmaterialappbar_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		FCCA93428676C854E420B03C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialautocomplete.h";
+			name = "qtmaterialautocomplete.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		EDB78F470C2CA8B172B4EFAD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialautocomplete_internal.h";
+			name = "qtmaterialautocomplete_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		4A45EB9A19C7CF1062D17F0E = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialautocomplete_p.h";
+			name = "qtmaterialautocomplete_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		0FE2B60D70FBF766B2505273 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialavatar.h";
+			name = "qtmaterialavatar.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		B56571E323DC572645A11F47 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialavatar_p.h";
+			name = "qtmaterialavatar_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		D67DE121D3FEFC295C7AF792 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialbadge.h";
+			name = "qtmaterialbadge.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		F8A891CA9908FA9C9668EC82 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialbadge_p.h";
+			name = "qtmaterialbadge_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		CC4706BA1FCC9F296687B661 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcheckbox.h";
+			name = "qtmaterialcheckbox.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		69529E5CFD3B01FBE30F32A5 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcheckbox_p.h";
+			name = "qtmaterialcheckbox_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		CFE2FBB32CB9EFFF8737E296 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcircularprogress.h";
+			name = "qtmaterialcircularprogress.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6C257F3A483DBDE52F3C55BC = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcircularprogress_internal.h";
+			name = "qtmaterialcircularprogress_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		BF84C37B8C71AA0ED3C65A20 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialcircularprogress_p.h";
+			name = "qtmaterialcircularprogress_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		E8187A7382FE8BADF6CD0DB1 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdialog.h";
+			name = "qtmaterialdialog.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		44C8203F5792542622A5DE28 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdialog_internal.h";
+			name = "qtmaterialdialog_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		776296DE982D9B1FD9D433CC = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdialog_p.h";
+			name = "qtmaterialdialog_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		D8E54230E9FC8C5EFF4C2E6F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdrawer.h";
+			name = "qtmaterialdrawer.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		AAD158C6A93707C19219B72A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdrawer_internal.h";
+			name = "qtmaterialdrawer_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		85D812B3D9E02FF892361E3C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialdrawer_p.h";
+			name = "qtmaterialdrawer_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		F8986B061FC21A8372D904AE = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialfab.h";
+			name = "qtmaterialfab.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7AB70A904779423C14D1A16A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialfab_p.h";
+			name = "qtmaterialfab_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		60AE6B9ABA2C14B75B7973C1 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialflatbutton.h";
+			name = "qtmaterialflatbutton.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		3CA07996EED2D30713881085 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialflatbutton_internal.h";
+			name = "qtmaterialflatbutton_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		33AE704A9FF40E287A44B65F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialflatbutton_p.h";
+			name = "qtmaterialflatbutton_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		B7AD10EC7DE1486A5DE2B7F6 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialiconbutton.h";
+			name = "qtmaterialiconbutton.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		BF5D1C157588F85CB31DD84A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialiconbutton_p.h";
+			name = "qtmaterialiconbutton_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		A64409C49D5B2BE02A1021D8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallist.h";
+			name = "qtmateriallist.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		C5C568A5B51EC914FD3E6A03 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallist_p.h";
+			name = "qtmateriallist_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		CFA84D25DAC16FEC7ED77929 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallistitem.h";
+			name = "qtmateriallistitem.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		A76A7820568F821D64CD1C49 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmateriallistitem_p.h";
+			name = "qtmateriallistitem_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		1D320B5D00C14552EAC3C6B4 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialmenu.h";
+			name = "qtmaterialmenu.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		9A6019EA087966D03E1A99CB = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialmenu_internal.h";
+			name = "qtmaterialmenu_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		1E9336EA5DEB653324458CCD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialmenu_p.h";
+			name = "qtmaterialmenu_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		3146519A71B143731EDAE682 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialpaper.h";
+			name = "qtmaterialpaper.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		DF4A0BE1FCDDE081D388C207 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialpaper_p.h";
+			name = "qtmaterialpaper_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		B901D7A838E4B707C6AC2A72 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialprogress.h";
+			name = "qtmaterialprogress.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		2378EFD4365BC1C5D7671947 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialprogress_internal.h";
+			name = "qtmaterialprogress_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		4EA69FFAD67052FCF011211A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialprogress_p.h";
+			name = "qtmaterialprogress_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7AFB55C1E27267A21BC8100A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialradiobutton.h";
+			name = "qtmaterialradiobutton.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		E3634179C50A9E544393E376 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialradiobutton_p.h";
+			name = "qtmaterialradiobutton_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		45B78A66D53549FD01C57592 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialraisedbutton.h";
+			name = "qtmaterialraisedbutton.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		62C5A11526110CE91455A548 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialraisedbutton_p.h";
+			name = "qtmaterialraisedbutton_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		AF08BBC28CC665D626329288 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialscrollbar.h";
+			name = "qtmaterialscrollbar.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		FFC23CA0CE8D6EF8D702408F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialscrollbar_internal.h";
+			name = "qtmaterialscrollbar_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		40FEB566C1D030E9387CECA8 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialscrollbar_p.h";
+			name = "qtmaterialscrollbar_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		3D403F304AAF336A56FC8AFD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialslider.h";
+			name = "qtmaterialslider.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		0DF071E1F08F457D3C0D4841 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialslider_internal.h";
+			name = "qtmaterialslider_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		E566242EAF2D8CA761C85D80 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialslider_p.h";
+			name = "qtmaterialslider_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		30F974B6E944CC7F021829F7 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialsnackbar.h";
+			name = "qtmaterialsnackbar.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		55699440AB07AE4624CF0F5F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialsnackbar_internal.h";
+			name = "qtmaterialsnackbar_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7B26011555D735E1AB4D7E17 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialsnackbar_p.h";
+			name = "qtmaterialsnackbar_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		2FCFEB8E6BBF0D7D00C17DD2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtable.h";
+			name = "qtmaterialtable.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		C297F075CBD97D368AEDA897 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtable_p.h";
+			name = "qtmaterialtable_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		01E62144840F54B8AE514520 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtabs.h";
+			name = "qtmaterialtabs.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		2A4ECBA0D525076C7874DF75 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtabs_internal.h";
+			name = "qtmaterialtabs_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6CF77C7CF2B2F5EA68FBDB64 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtabs_p.h";
+			name = "qtmaterialtabs_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		EC10BABAA87A3B637DA6FEE7 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtextfield.h";
+			name = "qtmaterialtextfield.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		64F0D617533CAC3B322395BD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtextfield_internal.h";
+			name = "qtmaterialtextfield_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		05CEDD8C6CD49305AA2724FD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtextfield_p.h";
+			name = "qtmaterialtextfield_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		FAABF52DA851A3847923A074 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtoggle.h";
+			name = "qtmaterialtoggle.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		A445C305A6DFE0EB352C54A9 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtoggle_internal.h";
+			name = "qtmaterialtoggle_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		7EB318981BBA0B69669DEFA0 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/qtmaterialtoggle_p.h";
+			name = "qtmaterialtoggle_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		65BB62ABB40442EB0F095697 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/layouts/qtmaterialsnackbarlayout.h";
+			name = "qtmaterialsnackbarlayout.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		5150E4491C7CC0598A559F8F = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/layouts/qtmaterialsnackbarlayout_p.h";
+			name = "qtmaterialsnackbarlayout_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		E1D60DCE5E048CE9F220A055 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable.h";
+			name = "qtmaterialcheckable.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		D8ADCF48B40E518AB3BC179C = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable_internal.h";
+			name = "qtmaterialcheckable_internal.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		45087E26D58617136DE553B0 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable_p.h";
+			name = "qtmaterialcheckable_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		05619202998E9C4842BE880A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialoverlaywidget.h";
+			name = "qtmaterialoverlaywidget.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6FA8292313E4925941E9E58E = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialripple.h";
+			name = "qtmaterialripple.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		683A3352A6D756C46F5AFDF4 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialrippleoverlay.h";
+			name = "qtmaterialrippleoverlay.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		F3235CD2D6D0C3FE500C5FD4 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstatetransition.h";
+			name = "qtmaterialstatetransition.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		86DA064AC72690DA7E2C388A = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstatetransitionevent.h";
+			name = "qtmaterialstatetransitionevent.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		3A7902237AD001DB17FDEBAD = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstyle.h";
+			name = "qtmaterialstyle.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6A1C2691D74D0AA093C075E2 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialstyle_p.h";
+			name = "qtmaterialstyle_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		A5ECEB9DFFA9658F62A1E2A5 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialtheme.h";
+			name = "qtmaterialtheme.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		73A129C62493E58266108F96 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/components/lib/qtmaterialtheme_p.h";
+			name = "qtmaterialtheme_p.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		0B49E2B9B887FFD5857E69A1 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/VisualSorting.pro";
+			name = "VisualSorting.pro";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		D09DA6FBF2253E805C8FBB17 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/.qmake.stash";
+			name = ".qmake.stash";
+			sourceTree = "<absolute>";
+		};
+		11F76B65BE080190A4D69131 = {
+			isa = PBXFileReference;
+			path = "/usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp";
+			name = "dummy.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		11AFD6F151782839D8A2750C = {
+			fileRef = "11F76B65BE080190A4D69131";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		25B08E2869634E9BCBA333A2 = {
+			isa = PBXGroup;
+			children = (
+				"B8DDCC42EC5A585907F73C98",
+				"0011B9157843F5F730C666F3",
+				"0787DB73F6AB6AB497185B14",
+				"51A6B63996F7C35CCBE523AA",
+				"FDAB802D77F1881C06C89DDB",
+				"050F87F9E1117BCBE01154A1",
+				"8AB6916118C59E3B2A084EF6",
+				"A234245CBE37314B7514D250",
+				"2F102D59E640022AD4249171",
+				"9EB72204D8F8883E87E8B755",
+				"85A7DAB1B93DE3A34F0444E0",
+				"AFCDB08E3DC3D6BC095BAA2B",
+				"2DB5D96D5D6BD79D807B361D",
+				"FBB3F100D975FDF2C068D511",
+				"F091B8B4919ADDB3E972A8DE",
+				"3A25C2BBD184FFDFC692A309",
+				"C1FC1832F07D34A431BC848B",
+				"0FED49C1FA5030D2E9D6E276",
+				"E4FC5290B9D2228548AFCCC3",
+				"270967C9DED684BFF6EC3E7D",
+				"4FD45C68863F0E29231EE9BA",
+				"55AFEF3842105B8B243F9717",
+				"6381AF2EEA3E84CD63463637",
+				"CE0C16126E93C9205C65FA8A",
+				"29BCAC9A01EA8F52903BA254",
+				"4006451F95C34CDCCB8A3298",
+				"DD3C8E292C869512AF4F77BA",
+				"3F0BDA61BBAE63DB8835F2EF",
+				"B30C01A378461239E085173A",
+				"3977F5A307FF1EE823C0346F",
+				"178D5B6EEA75123336919E7F",
+				"7EF0CABC5ED117DBA4D1478B",
+				"15D37431513E7EA3B2634E4C",
+				"0C02A4D7F2478973E5A669B2",
+				"89F054668B6F08F99CC51F55",
+				"99FC66B004E935C59EDF37DB",
+				"2179002A8C34F0DC24AC5509",
+				"DBFC1FD083A3F4C03D0B0A85",
+				"1ED361C8F0BCE98DB95A949D",
+				"F090B12215EAF200BFEF6047",
+				"8C8AA028595CEFCFAC937DF6",
+				"69F6E6145EB7DC41BBA7F7B5",
+				"273EBF753D67F5CC1868D62E",
+				"D25FE9D725EAB050E375BAB7",
+				"ABC9F50045DC07CAC6670057",
+				"1D552DC35E9D0A2BEF210526",
+				"9FBBAD8290ECC2F5C5E75A02");
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		EB3B6C6E21AFA06D826E19C4 = {
+			isa = PBXGroup;
+			children = (
+				"CC39C49882889FD572B70CBF",
+				"5F5FBD89AD73D08572E8A41A",
+				"F73B70CAFD94D27179B0983D",
+				"EFC0CBA11AFFEF675A54B9E0",
+				"4005B7A5B8684262D212F867",
+				"12E7AC31A978131D5AEEDB93",
+				"F25A21037722FB261271D287",
+				"8296EA1DAE6FD83DF1572F47",
+				"95036D1B8CEB5789D7626827",
+				"34FD9685860711C497B73D37",
+				"77E040A3E6B9F55453FFE1A8",
+				"96EEFBA7C8F0D8CCAE3DCE90",
+				"448355947162162842426661",
+				"9FA27BA32D55F67B1C5B4773",
+				"7380BDBC6B0F2B8144CB24C5",
+				"D98A5968F7BA4CCCEB6933C9",
+				"F54863729DF7BF9CE09856E6",
+				"2334CAF4103CE850EFDC6D33",
+				"CEAE1CF865F689F897FA1FCA",
+				"19CBA1EBCCCB3028E6A9FDDB",
+				"85F3DF17DF37F0ED9360A623",
+				"8C8A3D21C31F4F8ACF57BA2A",
+				"69D8D473517210AC3B88D11F",
+				"E80446D062008BC50B423557",
+				"3918653652FCD28A66A20507",
+				"1E49E24FC2CBC0AAE6EA6D33",
+				"174A05E37985191890A9B2BB",
+				"51345D7AFACDF958A57970B2",
+				"BCA6F91479A5CC589E161236",
+				"1916A01976E1304771048AE8",
+				"5E0378C10055F38AB1CE3AEF",
+				"85647A23E479330CEE0D6AA8",
+				"91125DD7E3812E1EF34A0081",
+				"AE43CB51CA554B718B4E9021",
+				"C6E5E92DA721E828A133050C",
+				"9C6804C521DA5347A6525063",
+				"0505D40AC7389753B6D02320",
+				"FB6FAF0A395A1A63B3EE7231",
+				"3C4E95C8FE455E3C158C1EBE",
+				"B2410018041F24D9F5D5C91D",
+				"9E2B04E1289D9E0DADC5ED6A",
+				"6A2E2CCE07E8589DA3137CC0",
+				"FCCA93428676C854E420B03C",
+				"EDB78F470C2CA8B172B4EFAD",
+				"4A45EB9A19C7CF1062D17F0E",
+				"0FE2B60D70FBF766B2505273",
+				"B56571E323DC572645A11F47",
+				"D67DE121D3FEFC295C7AF792",
+				"F8A891CA9908FA9C9668EC82",
+				"CC4706BA1FCC9F296687B661",
+				"69529E5CFD3B01FBE30F32A5",
+				"CFE2FBB32CB9EFFF8737E296",
+				"6C257F3A483DBDE52F3C55BC",
+				"BF84C37B8C71AA0ED3C65A20",
+				"E8187A7382FE8BADF6CD0DB1",
+				"44C8203F5792542622A5DE28",
+				"776296DE982D9B1FD9D433CC",
+				"D8E54230E9FC8C5EFF4C2E6F",
+				"AAD158C6A93707C19219B72A",
+				"85D812B3D9E02FF892361E3C",
+				"F8986B061FC21A8372D904AE",
+				"7AB70A904779423C14D1A16A",
+				"60AE6B9ABA2C14B75B7973C1",
+				"3CA07996EED2D30713881085",
+				"33AE704A9FF40E287A44B65F",
+				"B7AD10EC7DE1486A5DE2B7F6",
+				"BF5D1C157588F85CB31DD84A",
+				"A64409C49D5B2BE02A1021D8",
+				"C5C568A5B51EC914FD3E6A03",
+				"CFA84D25DAC16FEC7ED77929",
+				"A76A7820568F821D64CD1C49",
+				"1D320B5D00C14552EAC3C6B4",
+				"9A6019EA087966D03E1A99CB",
+				"1E9336EA5DEB653324458CCD",
+				"3146519A71B143731EDAE682",
+				"DF4A0BE1FCDDE081D388C207",
+				"B901D7A838E4B707C6AC2A72",
+				"2378EFD4365BC1C5D7671947",
+				"4EA69FFAD67052FCF011211A",
+				"7AFB55C1E27267A21BC8100A",
+				"E3634179C50A9E544393E376",
+				"45B78A66D53549FD01C57592",
+				"62C5A11526110CE91455A548",
+				"AF08BBC28CC665D626329288",
+				"FFC23CA0CE8D6EF8D702408F",
+				"40FEB566C1D030E9387CECA8",
+				"3D403F304AAF336A56FC8AFD",
+				"0DF071E1F08F457D3C0D4841",
+				"E566242EAF2D8CA761C85D80",
+				"30F974B6E944CC7F021829F7",
+				"55699440AB07AE4624CF0F5F",
+				"7B26011555D735E1AB4D7E17",
+				"2FCFEB8E6BBF0D7D00C17DD2",
+				"C297F075CBD97D368AEDA897",
+				"01E62144840F54B8AE514520",
+				"2A4ECBA0D525076C7874DF75",
+				"6CF77C7CF2B2F5EA68FBDB64",
+				"EC10BABAA87A3B637DA6FEE7",
+				"64F0D617533CAC3B322395BD",
+				"05CEDD8C6CD49305AA2724FD",
+				"FAABF52DA851A3847923A074",
+				"A445C305A6DFE0EB352C54A9",
+				"7EB318981BBA0B69669DEFA0");
+			name = "components";
+			sourceTree = "<group>";
+		};
+		3C4E95C8FE455E3C158C1EBE = {
+			isa = PBXGroup;
+			children = (
+				"A627CE0258E16AAE6A5DB17C",
+				"65BB62ABB40442EB0F095697",
+				"5150E4491C7CC0598A559F8F");
+			name = "layouts";
+			sourceTree = "<group>";
+		};
+		B2410018041F24D9F5D5C91D = {
+			isa = PBXGroup;
+			children = (
+				"FB63A77EB0118A31BEB4AAD8",
+				"866E918203E04317B97A59B3",
+				"C4600C45E865A5858805CB92",
+				"DE4A95A3694405940F60A200",
+				"3BFDEAE168546360AC703033",
+				"8FED6DBABF8DF0C2D61D4FED",
+				"24B9DB177DB3BF0F25FB13C7",
+				"991FEF48AB6F57A3F98D770A",
+				"E1D60DCE5E048CE9F220A055",
+				"D8ADCF48B40E518AB3BC179C",
+				"45087E26D58617136DE553B0",
+				"05619202998E9C4842BE880A",
+				"6FA8292313E4925941E9E58E",
+				"683A3352A6D756C46F5AFDF4",
+				"F3235CD2D6D0C3FE500C5FD4",
+				"86DA064AC72690DA7E2C388A",
+				"3A7902237AD001DB17FDEBAD",
+				"6A1C2691D74D0AA093C075E2",
+				"A5ECEB9DFFA9658F62A1E2A5",
+				"73A129C62493E58266108F96");
+			name = "lib";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 = {
+			isa = PBXGroup;
+			children = (
+				"3A756C037F21AC304DE015D6",
+				"DD7F2987D209C59BBA0A3AF8",
+				"12AC89B5F37C9F175105F009",
+				"04C578D7023E49C815E4F498",
+				"F5C8D40E6026CF6E65A1D295",
+				"E8F7DB9BF993926E9DBE291F",
+				"011543DD36F78B4000FBAB3C",
+				"5F56B23AA47B4EC45E7B970A",
+				"4F14CD6FDB67F1BBD96DF9DE",
+				"C0C2BF1C54652C8914363CF2",
+				"3D1FD05EE23C07E33CF4EC43",
+				"774A533A100DCD37D8D9562D",
+				"6DA2D93DDDA677342902519D",
+				"09C1276339CB7A0EB12EFFEF",
+				"EB3B6C6E21AFA06D826E19C4",
+				"C72BDEB5121EE5F0A622CE7D",
+				"58852B8578D355B9B37F5A63",
+				"3D1198E08DC849C6FFCCB2F8",
+				"8EEEF79DAFBABB53DF208546",
+				"36DE5AA569AA3CBD357B1457",
+				"D51401F310A9A8B9CD7A71F1",
+				"15906CEB340F31934822E0C2",
+				"7A8B3DAC38044D135970BDD9",
+				"FAA80243D4BCDE38A456E040",
+				"62AEBC9D79C4C5FC976B5D27",
+				"00A950D27EA712DAADF227A2");
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 = {
+			isa = PBXGroup;
+			children = (
+				"11F76B65BE080190A4D69131");
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 = {
+			isa = PBXGroup;
+			children = (
+				"0B49E2B9B887FFD5857E69A1",
+				"D09DA6FBF2253E805C8FBB17");
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF0942E79C014DCEC8976BC = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Preprocessors";
+			shellPath = "/bin/sh";
+			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = "0";
+		};
+		F7E50F631C51CD5B5DC0BC43 = {
+			buildActionMask = 2147483647;
+			files = (
+				"58F0D288270463BDD94EFFD4",
+				"DCAF757D51BE79F01DD08C92",
+				"00EEC0CBE485B0943E0F85E2",
+				"E4D5D5AAA2642E53BC7B6D13",
+				"8E89D0C5DF35140764407102",
+				"5DB5A69BDE3FAA62D7A45C5F",
+				"1B031F485D4600B74FADEA8A",
+				"1656485E38240C18B7140267",
+				"E36803F11D945A166177CCDC",
+				"CF74E3F8E4B101D9448E028F",
+				"6FD4F174EE6AEFBB4F812B27",
+				"5320B778B5213ACAE96A609C",
+				"DF56EF2890B3AE4BB9748D43",
+				"06603F2F742F71846CC047EE",
+				"0552517A304ECDCFD6CA4AEE",
+				"C30C53CD118C2751EADB15DA",
+				"82D9F53159ECC6F4F3873D62",
+				"98F75ABC1AE819D5ED77CD5C",
+				"0358C6CBE71CAD954E411E01",
+				"C18C3F3B62AFE2FBE5E7483E",
+				"FA84816CC2D7A7040FDC185B",
+				"9BC82EE508C0A4BD177AF5FA",
+				"D5F37CC36ACBF92AD329E038",
+				"531428F39839ABD0C864FBCC",
+				"FA78B70465199B6837A82026",
+				"C2A0FB41E5EDA3971CBA32CB",
+				"E20514EA9E2FB56152FFAC9D",
+				"4024000FAFB69707D96B4242",
+				"A16D77E37CC9FCD26AABB465",
+				"95E3C335F3C9BF27E9127E93",
+				"B877DDAB5749ABDF9F002DC2",
+				"6C05934CFA7D552193B35AAB",
+				"6531F8E64D39388766E52060",
+				"932806A20C68B36BCC6AD836",
+				"7A97886FE395F91AF5CCCEDE",
+				"CB4FAB9DA0D4077090CB4E8E",
+				"F6C4CA6790896A5F319C58A9",
+				"CB4448ECDC118558FF232289",
+				"938C451E21D977AD31AA26CB",
+				"CD04E72AD282A6B6CED93A38",
+				"2951A1BBE21367D1D482BCB3",
+				"1F142F3CC06D051B14DE5324",
+				"8DC6B27C5004FE1FAFABE0C5",
+				"2F9E86E6316B0B8871A72BAA",
+				"4C2B173D0C3B94C0DD79CB67",
+				"E9C17C3B14E019BB3B05480A",
+				"0586D6F20AA254DF41139F78",
+				"8112B42837ACC1A6B25A9213",
+				"8609F0F2B33E3C7E1C6F0294",
+				"E5AFE74F7776DE1C32E7046E",
+				"4B5BC7611BBD6C9FD3D423FD",
+				"D4817607E0B8D3929FD55573",
+				"9119662F5B22C9ECE6B5AA31",
+				"7BD27A5B65D8BD2BE0A2689E",
+				"A63B7034920DEA4BD5E07E20",
+				"3982083714D05F7497F7ECEF",
+				"216614AF714E99F0A21C009B",
+				"E5FB4B9B7BCF80B3F8E06B6E",
+				"9C3AEB9C5B0C81B03AC0A092",
+				"D08A17EE4EFF92362766BA63",
+				"1E5BF76341F1BA16F04F268C",
+				"982433B80F93E107E9C92719",
+				"0117B69592B8D83B555F5967",
+				"76A7E972FABC8AE5E7849B37",
+				"BC263ED4E80E84255DE99B82",
+				"B4102F8EE02DA5955BF48207",
+				"E2D2D0235D4878E5F10522A5",
+				"2743371D30AA3E4C40C22315",
+				"525304B1A3B83649CA82ABB2",
+				"ACDD7290253FA81962A231FB",
+				"A524CED280AD9E0F349261C6",
+				"C4208253798399911B0C9092",
+				"A3DBE316F0A9DF41CA13609F",
+				"6ACC40D747CD8E2F3E2711DA",
+				"444FE19928DCE012DECEED0A",
+				"7D6C67DD9CB55101DA053227",
+				"01F64FB1FF24D5BEDE29B54E",
+				"F5C219D3C38476A09A4D7AAD",
+				"47E9CCE0EDA40CCE514EA9FF",
+				"9BEFFE275D8BE4D6BD92638B",
+				"17628AEC29DB5144ABF2AE51",
+				"386A9C16F53B78F71FC30A93",
+				"C88AB49A067EA6693D37E90D",
+				"CD5F23B0AA4B5C59E4334D9C",
+				"6B32751788A6323DED4F5704",
+				"35E5E490980C173255B5068A",
+				"6EEC610A6DDA1E086F09A684",
+				"D1B904CA8DDFF8C46CEE3D8E",
+				"0A243A4AD522C5A51323CC8F",
+				"AAA6CA9535F53688ECA7578B",
+				"E9D3F12C20D124164F8D4247",
+				"9483B3AA68FC81B5A6A558DF",
+				"4862A2060D9A866A7DD07A93",
+				"32754BBC5EF61A89645FE128",
+				"3A42ED846A2E3DA7F8065C14",
+				"406E25B437E85FF007122EEA",
+				"2E70ECD1A93CD147459D993A",
+				"4E72C68D9292239D4DB04B34",
+				"451B179EFD6684F7A435925F",
+				"641331CB9F6CC90532248F07",
+				"A4B19CF557DD78F537643C20",
+				"3A23285251A8F5ED72F7E675",
+				"888955CD6053A1BCB78F9390",
+				"A95594BB79B04DD490D46615",
+				"FDF84D62F2A77A6B338951C9",
+				"DF23EB59C5DC0862B9337ECC",
+				"D576E70275ADFDA0633F4D43",
+				"172D5B746DF929B5A6968C0E",
+				"11AFD6F151782839D8A2750C");
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources";
+		};
+		26FB077F01E285C42AEF1627 = {
+			isa = PBXFileReference;
+			name = "QtWidgets.framework";
+			path = "/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		B537134372803027546F936E = {
+			fileRef = "26FB077F01E285C42AEF1627";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		29CD04F802630A54ABBFAE7F = {
+			isa = PBXFileReference;
+			name = "QtGui.framework";
+			path = "/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		9887B6B23D47BC46EC7E11C1 = {
+			fileRef = "29CD04F802630A54ABBFAE7F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F86E8D3BAE6BF3F107CC1421 = {
+			isa = PBXFileReference;
+			name = "QtCore.framework";
+			path = "/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		31F5EE318CBBDCCACCCA3491 = {
+			fileRef = "F86E8D3BAE6BF3F107CC1421";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B774D8E4178765CE52EAAF5 = {
+			isa = PBXFileReference;
+			name = "DiskArbitration.framework";
+			path = "/System/Library/Frameworks/DiskArbitration.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		A99B2AA0F9CBBDD12BA126A4 = {
+			fileRef = "2B774D8E4178765CE52EAAF5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A1A67BEAA744704B29168D39 = {
+			isa = PBXFileReference;
+			name = "IOKit.framework";
+			path = "/System/Library/Frameworks/IOKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8D267F2E4776F0ECA2F49DC8 = {
+			fileRef = "A1A67BEAA744704B29168D39";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D4B32C2222F82AC56BADEB21 = {
+			isa = PBXFileReference;
+			name = "OpenGL.framework";
+			path = "/System/Library/Frameworks/OpenGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8771A8C96E9C391044035D99 = {
+			fileRef = "D4B32C2222F82AC56BADEB21";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D9815BDB5BD9F90D2BC05C5 = {
+			isa = PBXFileReference;
+			name = "AGL.framework";
+			path = "/System/Library/Frameworks/AGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		E45E51A644D5FC9F942ECE55 = {
+			fileRef = "8D9815BDB5BD9F90D2BC05C5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AF39DD055C3EF8226FBE929D = {
+			children = (
+				"26FB077F01E285C42AEF1627",
+				"29CD04F802630A54ABBFAE7F",
+				"F86E8D3BAE6BF3F107CC1421",
+				"2B774D8E4178765CE52EAAF5",
+				"A1A67BEAA744704B29168D39",
+				"D4B32C2222F82AC56BADEB21",
+				"8D9815BDB5BD9F90D2BC05C5");
+			isa = PBXGroup;
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D1C883685E82D5676953459A = {
+			buildActionMask = 2147483647;
+			files = (
+				"B537134372803027546F936E",
+				"9887B6B23D47BC46EC7E11C1",
+				"31F5EE318CBBDCCACCCA3491",
+				"A99B2AA0F9CBBDD12BA126A4",
+				"8D267F2E4776F0ECA2F49DC8",
+				"8771A8C96E9C391044035D99",
+				"E45E51A644D5FC9F942ECE55");
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Link Binary With Libraries";
+		};
+		30414803F31797EB689AE508 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Copy Bundle Resources";
+		};
+		99542592E9780B9225F24AA8 = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-			);
+				);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		011543DD36F78B4000FBAB3C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/main.cpp"; sourceTree = "<absolute>"; };
-		050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_sorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_sorter.cpp"; sourceTree = "<absolute>"; };
-		0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_graphicsview.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_graphicsview.cpp"; sourceTree = "<absolute>"; };
-		0B49E2B9B887FFD5857E69A1 /* VisualSorting.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = VisualSorting.pro; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/VisualSorting.pro"; sourceTree = "<absolute>"; };
-		11F76B65BE080190A4D69131 /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp; sourceTree = "<absolute>"; };
-		15906CEB340F31934822E0C2 /* painterpalette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = painterpalette.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.h"; sourceTree = "<absolute>"; };
-		26FB077F01E285C42AEF1627 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
-		29CD04F802630A54ABBFAE7F /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework; sourceTree = "<absolute>"; };
-		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
-		36DE5AA569AA3CBD357B1457 /* heapsorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = heapsorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.h"; sourceTree = "<absolute>"; };
-		3A756C037F21AC304DE015D6 /* bubblesorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bubblesorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp"; sourceTree = "<absolute>"; };
-		3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = quicksorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.cpp"; sourceTree = "<absolute>"; };
-		4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = painterpalette.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/painterpalette.cpp"; sourceTree = "<absolute>"; };
-		51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_mainwindow.cpp"; sourceTree = "<absolute>"; };
-		5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.cpp"; sourceTree = "<absolute>"; };
-		62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorterfactory.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.h"; sourceTree = "<absolute>"; };
-		6DA2D93DDDA677342902519D /* sorterfactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorterfactory.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorterfactory.cpp"; sourceTree = "<absolute>"; };
-		774A533A100DCD37D8D9562D /* sorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.cpp"; sourceTree = "<absolute>"; };
-		7A8B3DAC38044D135970BDD9 /* quicksorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = quicksorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/quicksorter.h"; sourceTree = "<absolute>"; };
-		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
-		8EEEF79DAFBABB53DF208546 /* graphicsview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphicsview.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.h"; sourceTree = "<absolute>"; };
-		9E1BB919E5247FA4E4B91039 /* VisualSorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualSorting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_bubblesorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_bubblesorter.cpp"; sourceTree = "<absolute>"; };
-		C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bubblesorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h"; sourceTree = "<absolute>"; };
-		D09DA6FBF2253E805C8FBB17 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/.qmake.stash"; sourceTree = "<absolute>"; };
-		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		D51401F310A9A8B9CD7A71F1 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/mainwindow.h"; sourceTree = "<absolute>"; };
-		E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = heapsorter.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/heapsorter.cpp"; sourceTree = "<absolute>"; };
-		F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = graphicsview.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/graphicsview.cpp"; sourceTree = "<absolute>"; };
-		F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework; sourceTree = "<absolute>"; };
-		FAA80243D4BCDE38A456E040 /* sorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sorter.h; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/sorter.h"; sourceTree = "<absolute>"; };
-		FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_painterpalette.cpp; path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_painterpalette.cpp"; sourceTree = "<absolute>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B537134372803027546F936E /* QtWidgets.framework in Link Binary With Libraries */,
-				9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */,
-				31F5EE318CBBDCCACCCA3491 /* QtCore.framework in Link Binary With Libraries */,
-				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
-				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
-				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
-				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
-			);
-			name = "Link Binary With Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
+		9E1BB919E5247FA4E4B91039 = {
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			explicitFileType = "wrapper.application";
+			path = "VisualSorting.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
-			isa = PBXGroup;
+		FE0A091FDBFB3E9C31B7A1BD = {
 			children = (
-				B8DDCC42EC5A585907F73C98 /* moc_bubblesorter.cpp */,
-				0787DB73F6AB6AB497185B14 /* moc_graphicsview.cpp */,
-				51A6B63996F7C35CCBE523AA /* moc_mainwindow.cpp */,
-				FDAB802D77F1881C06C89DDB /* moc_painterpalette.cpp */,
-				050F87F9E1117BCBE01154A1 /* moc_sorter.cpp */,
-			);
-			name = "Generated Sources";
+				"9E1BB919E5247FA4E4B91039");
+			isa = PBXGroup;
+			name = "Products";
 			sourceTree = "<group>";
 		};
-		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
-			isa = PBXGroup;
+		E8C543AB96796ECAA2E65C57 = {
 			children = (
-				3A756C037F21AC304DE015D6 /* bubblesorter.cpp */,
-				F5C8D40E6026CF6E65A1D295 /* graphicsview.cpp */,
-				8EEEF79DAFBABB53DF208546 /* graphicsview.h */,
-				E8F7DB9BF993926E9DBE291F /* heapsorter.cpp */,
-				011543DD36F78B4000FBAB3C /* main.cpp */,
-				5F56B23AA47B4EC45E7B970A /* mainwindow.cpp */,
-				4F14CD6FDB67F1BBD96DF9DE /* painterpalette.cpp */,
-				3D1FD05EE23C07E33CF4EC43 /* quicksorter.cpp */,
-				774A533A100DCD37D8D9562D /* sorter.cpp */,
-				6DA2D93DDDA677342902519D /* sorterfactory.cpp */,
-				C72BDEB5121EE5F0A622CE7D /* bubblesorter.h */,
-				36DE5AA569AA3CBD357B1457 /* heapsorter.h */,
-				D51401F310A9A8B9CD7A71F1 /* mainwindow.h */,
-				15906CEB340F31934822E0C2 /* painterpalette.h */,
-				7A8B3DAC38044D135970BDD9 /* quicksorter.h */,
-				FAA80243D4BCDE38A456E040 /* sorter.h */,
-				62AEBC9D79C4C5FC976B5D27 /* sorterfactory.h */,
-			);
-			name = Sources;
+				"2EB56BE3C2D93CDAB0C52E67",
+				"25B08E2869634E9BCBA333A2",
+				"74B182DB50CB5611B5C1C297",
+				"B8254625CFD509ED2A24A166",
+				"AF39DD055C3EF8226FBE929D",
+				"FE0A091FDBFB3E9C31B7A1BD");
+			isa = PBXGroup;
+			name = "VisualSorting";
 			sourceTree = "<group>";
 		};
-		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B49E2B9B887FFD5857E69A1 /* VisualSorting.pro */,
-				D09DA6FBF2253E805C8FBB17 /* .qmake.stash */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				26FB077F01E285C42AEF1627 /* QtWidgets.framework */,
-				29CD04F802630A54ABBFAE7F /* QtGui.framework */,
-				F86E8D3BAE6BF3F107CC1421 /* QtCore.framework */,
-				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
-				A1A67BEAA744704B29168D39 /* IOKit.framework */,
-				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
-				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */ = {
-			isa = PBXGroup;
-			children = (
-				11F76B65BE080190A4D69131 /* dummy.cpp */,
-			);
-			name = "Sources [moc_predefs]";
-			sourceTree = "<group>";
-		};
-		E8C543AB96796ECAA2E65C57 /* VisualSorting */ = {
-			isa = PBXGroup;
-			children = (
-				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
-				25B08E2869634E9BCBA333A2 /* Generated Sources */,
-				74B182DB50CB5611B5C1C297 /* Supporting Files */,
-				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
-				AF39DD055C3EF8226FBE929D /* Frameworks */,
-				FE0A091FDBFB3E9C31B7A1BD /* Products */,
-			);
-			name = VisualSorting;
-			sourceTree = "<group>";
-		};
-		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9E1BB919E5247FA4E4B91039 /* VisualSorting.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		79676B21544A58F104F2979A /* VisualSorting */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */;
+		70E2801BAAC800E2BC18FF57 = {
 			buildPhases = (
-				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
-				D1C883685E82D5676953459A /* Link Binary With Libraries */,
-				30414803F31797EB689AE508 /* Copy Bundle Resources */,
-				99542592E9780B9225F24AA8 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
+				"5E618435888B9D49F8540165",
+				"7EF0942E79C014DCEC8976BC");
 			dependencies = (
-				938B64238DB76E298C94792E /* PBXTargetDependency */,
-			);
-			name = VisualSorting;
-			productName = VisualSorting;
-			productReference = 9E1BB919E5247FA4E4B91039 /* VisualSorting.app */;
-			productType = "com.apple.product-type.application";
+				);
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXAggregateTarget;
+			buildRules = (
+);
+			productName = "Qt Preprocess";
+			name = "Qt Preprocess";
 		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		6DB9C3763D02B1415CD9D565 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				TargetAttributes = {
-					70E2801BAAC800E2BC18FF57 = {
-						DevelopmentTeam = TYRRVX7RWJ;
-					};
-					79676B21544A58F104F2979A = {
-						DevelopmentTeam = TYRRVX7RWJ;
-					};
-				};
+		938B64238DB76E298C94792E = {
+			isa = PBXTargetDependency;
+			target = "70E2801BAAC800E2BC18FF57";
+		};
+		79676B21544A58F104F2979A = {
+			buildPhases = (
+				"F7E50F631C51CD5B5DC0BC43",
+				"D1C883685E82D5676953459A",
+				"30414803F31797EB689AE508",
+				"99542592E9780B9225F24AA8");
+			dependencies = (
+				"938B64238DB76E298C94792E");
+			productReference = "9E1BB919E5247FA4E4B91039";
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXNativeTarget;
+			buildRules = (
+);
+			productType = "com.apple.product-type.application";
+			name = "VisualSorting";
+			productName = "VisualSorting";
+		};
+		3AA6C32AC930069E80220CF1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
+				ENABLE_BITCODE = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_NAME = "VisualSorting";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.10";
+				HEADER_SEARCH_PATHS = (
+					".",
+					".",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt/5.9.1/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt/5.9.1/lib",
+					"/usr/local/Cellar/qt/5.9.1/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-F/usr/local/Cellar/qt/5.9.1/lib");
+				ARCHS = "x86_64";
 			};
-			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "VisualSorting" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			name = "Debug";
+		};
+		77418F46922677BB04ED38DD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
+				ENABLE_BITCODE = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_NAME = "VisualSorting";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "VisualSorting";
+			};
+			name = "Debug";
+		};
+		339EE1B2CC4FC24589A0EA95 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "YES";
+				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
+				ENABLE_BITCODE = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "VisualSorting";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.10";
+				HEADER_SEARCH_PATHS = (
+					".",
+					".",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt/5.9.1/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt/5.9.1/lib",
+					"/usr/local/Cellar/qt/5.9.1/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-F/usr/local/Cellar/qt/5.9.1/lib");
+				ARCHS = "x86_64";
+			};
+			name = "Release";
+		};
+		6666AA5E688052234F6758D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "YES";
+				DEVELOPMENT_TEAM = "TYRRVX7RWJ";
+				ENABLE_BITCODE = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "VisualSorting";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "VisualSorting";
+			};
+			name = "Release";
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"3AA6C32AC930069E80220CF1",
+				"339EE1B2CC4FC24589A0EA95");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6CC3B5D2136C7CD6A5CF5A59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"77418F46922677BB04ED38DD",
+				"6666AA5E688052234F6758D8");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6DB9C3763D02B1415CD9D565 = {
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-			);
-			mainGroup = E8C543AB96796ECAA2E65C57 /* VisualSorting */;
-			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			compatibilityVersion = "Xcode 3.2";
+			isa = PBXProject;
+			mainGroup = "E8C543AB96796ECAA2E65C57";
+			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
+			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79676B21544A58F104F2979A /* VisualSorting */,
-				70E2801BAAC800E2BC18FF57 /* Qt Preprocess */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Copy Bundle Resources";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5E618435888B9D49F8540165 /* Qt Qmake */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Qt Qmake";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_makeqmake.mak";
-			showEnvVarsInLog = 0;
-		};
-		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "Qt Preprocessors";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_preprocess.mak";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58F0D288270463BDD94EFFD4 /* bubblesorter.cpp in Compile Sources */,
-				8E89D0C5DF35140764407102 /* graphicsview.cpp in Compile Sources */,
-				5DB5A69BDE3FAA62D7A45C5F /* heapsorter.cpp in Compile Sources */,
-				1B031F485D4600B74FADEA8A /* main.cpp in Compile Sources */,
-				1656485E38240C18B7140267 /* mainwindow.cpp in Compile Sources */,
-				E36803F11D945A166177CCDC /* painterpalette.cpp in Compile Sources */,
-				6FD4F174EE6AEFBB4F812B27 /* quicksorter.cpp in Compile Sources */,
-				5320B778B5213ACAE96A609C /* sorter.cpp in Compile Sources */,
-				DF56EF2890B3AE4BB9748D43 /* sorterfactory.cpp in Compile Sources */,
-				982433B80F93E107E9C92719 /* moc_bubblesorter.cpp in Compile Sources */,
-				76A7E972FABC8AE5E7849B37 /* moc_graphicsview.cpp in Compile Sources */,
-				BC263ED4E80E84255DE99B82 /* moc_mainwindow.cpp in Compile Sources */,
-				B4102F8EE02DA5955BF48207 /* moc_painterpalette.cpp in Compile Sources */,
-				E2D2D0235D4878E5F10522A5 /* moc_sorter.cpp in Compile Sources */,
-				11AFD6F151782839D8A2750C /* dummy.cpp in Compile Sources */,
-			);
-			name = "Compile Sources";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		938B64238DB76E298C94792E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 70E2801BAAC800E2BC18FF57 /* Qt Preprocess */;
-			targetProxy = 369C37001FE5AB8700CABD4D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		339EE1B2CC4FC24589A0EA95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				ARCHS = x86_64;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
-				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = TYRRVX7RWJ;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					/usr/local/Cellar/qt/5.9.1/lib,
-					/usr/local/Cellar/qt/5.9.1/lib,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = (
-					.,
-					.,
-					/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers,
-					/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers,
-					/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers,
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang",
-				);
-				INFOPLIST_FILE = Info.plist;
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/qt/5.9.1/lib,
-					/System/Library/Frameworks/,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-F/usr/local/Cellar/qt/5.9.1/lib",
-				);
-				PRODUCT_NAME = VisualSorting;
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
+				"79676B21544A58F104F2979A",
+				"70E2801BAAC800E2BC18FF57");
+			attributes = {
+				TargetAttributes = {
+				};
 			};
-			name = Release;
 		};
-		3AA6C32AC930069E80220CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				ARCHS = x86_64;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = TYRRVX7RWJ;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					/usr/local/Cellar/qt/5.9.1/lib,
-					/usr/local/Cellar/qt/5.9.1/lib,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = (
-					.,
-					.,
-					/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers,
-					/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers,
-					/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers,
-					.,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
-					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
-					"/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang",
-				);
-				INFOPLIST_FILE = Info.plist;
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/qt/5.9.1/lib,
-					/System/Library/Frameworks/,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-O2",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-O2",
-					"-std=gnu++11",
-					"-Wall",
-					"-W",
-					"-fPIC",
-					"-DQT_DEPRECATED_WARNINGS",
-					"-DQT_NO_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-				);
-				OTHER_LDFLAGS = (
-					"-stdlib=libc++",
-					"-headerpad_max_install_names",
-					"-Wl,-rpath,@executable_path/Frameworks",
-					"-F/usr/local/Cellar/qt/5.9.1/lib",
-				);
-				PRODUCT_NAME = VisualSorting;
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-				SYMROOT = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/";
-			};
-			name = Debug;
-		};
-		6666AA5E688052234F6758D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = TYRRVX7RWJ;
-				ENABLE_BITCODE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				PRODUCT_NAME = VisualSorting;
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		77418F46922677BB04ED38DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				"ARCHS[sdk=macosx*]" = x86_64;
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = TYRRVX7RWJ;
-				ENABLE_BITCODE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = VisualSorting;
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "VisualSorting" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77418F46922677BB04ED38DD /* Debug */,
-				6666AA5E688052234F6758D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "VisualSorting" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AA6C32AC930069E80220CF1 /* Debug */,
-				339EE1B2CC4FC24589A0EA95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
 	};
-	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+	rootObject = "6DB9C3763D02B1415CD9D565";
 }

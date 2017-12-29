@@ -122,6 +122,17 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTimeLine \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qtimeline.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeasingcurve.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialradiobutton.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/lib/qtmaterialcheckable.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialflatbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QScopedPointer \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/lib/qtmaterialtheme.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QColor \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QIcon \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialraisedbutton.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QDesktopWidget \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qdesktopwidget.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QSignalMapper \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qsignalmapper.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QTime \
@@ -130,4 +141,26 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreapplication.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qcoreevent.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qeventloop.h \
-  graphicsview.h
+  graphicsview.h \
+  /Users/Halcao/Documents/Source\ Exercise/Qt/VisualSorting/components/qtmaterialslider.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QAbstractSlider \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QStatusBar \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qstatusbar.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/QMouseEvent \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qevent.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qset.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qurl.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qfile.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/qfiledevice.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qvector2d.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers/qtouchdevice.h \
+  frameless_helper.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QWidget \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QHash \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QEvent \
+  widgetdata.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QRubberBand \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qrubberband.h \
+  cursorposcalculator.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QPoint \
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QRect

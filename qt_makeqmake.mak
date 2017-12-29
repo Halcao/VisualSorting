@@ -184,6 +184,7 @@ project.pbxproj: VisualSorting.pro /usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/resources.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/moc.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/unix/opengl.prf \
+		/usr/local/Cellar/qt/5.9.1/mkspecs/features/uic.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/unix/thread.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/qmake_use.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/file_copies.prf \
@@ -194,6 +195,8 @@ project.pbxproj: VisualSorting.pro /usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/yacc.prf \
 		/usr/local/Cellar/qt/5.9.1/mkspecs/features/lex.prf \
 		VisualSorting.pro \
+		components/resources.qrc12.qrc \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/QtWidgets.prl \
 		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/QtGui.prl \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/QtCore.prl
 	$(QMAKE) -o project.pbxproj VisualSorting.pro -spec macx-xcode
@@ -372,6 +375,7 @@ project.pbxproj: VisualSorting.pro /usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/resources.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/moc.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/unix/opengl.prf:
+/usr/local/Cellar/qt/5.9.1/mkspecs/features/uic.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/unix/thread.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/qmake_use.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/file_copies.prf:
@@ -382,6 +386,8 @@ project.pbxproj: VisualSorting.pro /usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/yacc.prf:
 /usr/local/Cellar/qt/5.9.1/mkspecs/features/lex.prf:
 VisualSorting.pro:
+components/resources.qrc12.qrc:
+/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/QtWidgets.prl:
 /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/QtGui.prl:
 /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/QtCore.prl:
 qmake: FORCE
