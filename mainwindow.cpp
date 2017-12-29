@@ -10,6 +10,10 @@
 #include <QMouseEvent>
 #include <QStatusBar>
 #include "frameless_helper.h"
+#include <QActionGroup>
+#include <QAction>
+#include <QMenuBar>
+#include "aboutpage.h"
 
 MainWindow::MainWindow(QWidget *parent) :
 QMainWindow(parent),
@@ -129,10 +133,7 @@ desktop(new QDesktopWidget) {
 //    this->resize(300,300);//显示大小
     
     this->setMouseTracking(true);
-    
-    QStatusBar *statusBar = new QStatusBar;
-//    statusBar->
-    
+
     FramelessHelper *pHelper = new FramelessHelper(this);
     pHelper->activateOn(this);  //激活当前窗体
     pHelper->setTitleHeight(20);  //设置窗体的标题栏高度
@@ -143,6 +144,45 @@ desktop(new QDesktopWidget) {
     
     QSizePolicy policy(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
     centralWidget->setSizePolicy(policy);
+    
+    
+    // Option
+    QList<QAction *> alignmentGroupOfSort = QList<QAction *>();
+    QAction *gradientAct = new QAction(tr("&Gradient Color"), this);
+    QAction *histogramAct = new QAction(tr("&Histogram"), this);
+    alignmentGroupOfSort.append(gradientAct);
+    alignmentGroupOfSort.append(histogramAct);
+    connect(gradientAct, SIGNAL(triggered(bool)), this, SLOT(setTypeGradient()));
+    connect(histogramAct, SIGNAL(triggered(bool)), this, SLOT(setTypeHistogram()));
+
+    createMenuWithNameAndActions("Sort", alignmentGroupOfSort);
+    
+    QList<QAction *> alignmentGroupOfMore = QList<QAction *>();
+    QAction *aboutAct = new QAction(tr("&About"), this);
+    connect(aboutAct, SIGNAL(triggered(bool)), this, SLOT(showAboutPage()));
+    alignmentGroupOfMore.append(aboutAct);
+    
+    createMenuWithNameAndActions("More", alignmentGroupOfMore);
+}
+
+void MainWindow::setTypeGradient() {
+    painterPalette->type = 1;
+    setSize(0);
+}
+
+void MainWindow::setTypeHistogram() {
+    painterPalette->type = 0;
+    setSize(0);
+}
+
+void MainWindow::showAboutPage() {
+    AboutPage *newPage = new AboutPage();
+    newPage->show();
+}
+
+void MainWindow::createMenuWithNameAndActions(const char *str, QList<QAction *> actions) {
+    QMenu *menu = menuBar()->addMenu(tr(str));
+    menu->addActions(actions);
 }
 
 void MainWindow::setSorterType(int type) {
@@ -171,13 +211,9 @@ void MainWindow::setSpeed(int speed) {
 
 void MainWindow::setSize(int index) {
     QtMaterialRaisedButton *button = sizeButtons[index];
-    int size = button->text().toInt();
+    size = button->text().toInt();
     
     sorter->state = SortingStateNotSorting;
-//    string name = sorter->name;
-//    this->sorter = SorterFactory::getSorter(name);
-//    this->sorter->state = SortingStateNotSorting;
-//    cout << sorter->type << endl;
     vector<int> array;
     array.clear();
     for (int i = 1; i <= size; i++) {
@@ -225,7 +261,7 @@ void MainWindow::swapFrame(int i, int j) {
     }
     QTime t;
     t.start();
-    while(t.elapsed()<speed+0.1)
+    while(t.elapsed()<speed)
         QCoreApplication::processEvents();
     int temp = painterPalette->dataSource[i];
     

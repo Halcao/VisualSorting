@@ -61,6 +61,7 @@ protected:
 //    void setResizeCursor(ResizeRegion region);
     
 private:
+    void createMenuWithNameAndActions(const char *str, QList<QAction *> actions);
     // generate random dataset
     void shuffle(vector<int> &);
     vector<QtMaterialRaisedButton *> sizeButtons;
@@ -86,6 +87,9 @@ public slots:
     void setSize(int);
     void swapFrame(int, int);
     void restart();
+    void setTypeGradient();
+    void setTypeHistogram();
+    void showAboutPage();
 };
 
 #endif /* mainwindow_h */

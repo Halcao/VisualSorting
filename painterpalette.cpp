@@ -17,6 +17,7 @@ void gradientArc(QPainter *painter, int radius, double startAngle, double angleL
     QRadialGradient gradient(0, 0, radius);
     gradient.setColorAt(0, QColor(0x21BACF));
     gradient.setColorAt(1.0, color);
+//    QRadialGradient
     painter->setBrush(gradient);
     
     // << 1（左移1位）相当于radius*2 即：150*2=300
@@ -56,48 +57,52 @@ void PainterPalette::paintEvent(QPaintEvent *event) {
     QPainter painter(this);
     // 反走样
     painter.setRenderHint(QPainter::Antialiasing, true);
-    // 设置画笔颜色、宽
-//    painter.setPen(QPen(QColor(0, 160, 230), 0.5));
-//    // 设置画刷颜色
-//    painter.setBrush(QColor(255, 160, 90));
     
     
     int dataCount = dataSource.size();
-//    int baseWeight = this->width()/(dataCount*1.1);
-//    
-//    int maxHeight = 0;
-//    for (auto height: dataSource) {
-//        maxHeight = height > maxHeight ? height: maxHeight;
-//    }
-//    
-//    int heightRatio = height()/maxHeight;
-//    
-//    for (int i = 0; i < dataCount; i++) {
-//        if (i == from || i == to) {
-//            painter.setBrush(QColor(0, 160, 230));
-//        } else {
-//            painter.setBrush(QColor(255, 160, 90));
-//        }
-//        painter.drawRect(i*this->width()/dataCount, this->height()-dataSource[i]*heightRatio, baseWeight, dataSource[i]*heightRatio);
-//    }
     
-    int radius = 250;
-    int arcHeight = 30;
-    
-    // >> 1（右移1位）相当于width() / 2
-    painter.translate(this->width() >> 1, height() >> 1);
-    
-    /**
-     * 参数二：半径
-     * 参数三：开始的角度
-     * 参数四：指扫取的角度-顺时针（360度 / 8 = 45度）
-     * 参数五：圆环的高度
-     * 参数六：填充色
-     **/
+    //设置画笔颜色、宽
+    painter.setPen(QPen(QColor(0, 160, 230), 0.5));
+    // 设置画刷颜色
+    painter.setBrush(QColor(255, 160, 90));
 
-    double interval = 360.0/dataCount;
-    for(int i = 0; i < dataCount; i++) {
-        gradientArc(&painter, radius, i*interval, interval, arcHeight, QColor(rgb((double)dataSource[i]/(double)dataCount)));
+    if (type == 0) {
+        int baseWeight = this->width()/(dataCount*1.1);
+        
+        int maxHeight = 0;
+        for (auto height: dataSource) {
+            maxHeight = height > maxHeight ? height: maxHeight;
+        }
+        
+        int heightRatio = height()/maxHeight;
+        
+        for (int i = 0; i < dataCount; i++) {
+            if (i == from || i == to) {
+                painter.setBrush(QColor(0, 160, 230));
+            } else {
+                painter.setBrush(QColor(255, 160, 90));
+            }
+            painter.drawRect(i*this->width()/dataCount, this->height()-dataSource[i]*heightRatio, baseWeight, dataSource[i]*heightRatio);
+        }
+    } else if (type == 1) {
+        int radius = 250;
+        int arcHeight = 30;
+        
+        // >> 1（右移1位）相当于width() / 2
+        painter.translate(this->width() >> 1, height() >> 1);
+        
+        /**
+         * 参数二：半径
+         * 参数三：开始的角度
+         * 参数四：指扫取的角度-顺时针（360度 / 8 = 45度）
+         * 参数五：圆环的高度
+         * 参数六：填充色
+         **/
+        
+        double interval = 360.0/dataCount;
+        for(int i = 0; i < dataCount; i++) {
+            gradientArc(&painter, radius, i*interval, interval, arcHeight, QColor(rgb((double)dataSource[i]/(double)dataCount)));
+        }
     }
 }
 

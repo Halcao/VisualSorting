@@ -16,6 +16,21 @@
 			shellScript = "make -C '/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/' -f VisualSorting.xcodeproj/qt_makeqmake.mak";
 			showEnvVarsInLog = "0";
 		};
+		98F7060F23DD72B5B61A30CE = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/aboutpage.cpp";
+			name = "aboutpage.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0FA7BADE33DA4DBD246F4124 = {
+			fileRef = "98F7060F23DD72B5B61A30CE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		3A756C037F21AC304DE015D6 = {
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.cpp";
@@ -931,6 +946,21 @@
 					);
 			};
 		};
+		06393E5E249A98992F5BC698 = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_aboutpage.cpp";
+			name = "moc_aboutpage.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F3FC3B67A4DDE4D00D8C0ABF = {
+			fileRef = "06393E5E249A98992F5BC698";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		B8DDCC42EC5A585907F73C98 = {
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/moc_bubblesorter.cpp";
@@ -1636,6 +1666,13 @@
 					);
 			};
 		};
+		304D6865CCD6314E1AB229CF = {
+			isa = PBXFileReference;
+			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/aboutpage.h";
+			name = "aboutpage.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
 		C72BDEB5121EE5F0A622CE7D = {
 			isa = PBXFileReference;
 			path = "/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting/bubblesorter.h";
@@ -2283,6 +2320,7 @@
 		25B08E2869634E9BCBA333A2 = {
 			isa = PBXGroup;
 			children = (
+				"06393E5E249A98992F5BC698",
 				"B8DDCC42EC5A585907F73C98",
 				"0011B9157843F5F730C666F3",
 				"0787DB73F6AB6AB497185B14",
@@ -2480,6 +2518,7 @@
 		2EB56BE3C2D93CDAB0C52E67 = {
 			isa = PBXGroup;
 			children = (
+				"98F7060F23DD72B5B61A30CE",
 				"3A756C037F21AC304DE015D6",
 				"DD7F2987D209C59BBA0A3AF8",
 				"12AC89B5F37C9F175105F009",
@@ -2495,6 +2534,7 @@
 				"6DA2D93DDDA677342902519D",
 				"09C1276339CB7A0EB12EFFEF",
 				"EB3B6C6E21AFA06D826E19C4",
+				"304D6865CCD6314E1AB229CF",
 				"C72BDEB5121EE5F0A622CE7D",
 				"58852B8578D355B9B37F5A63",
 				"3D1198E08DC849C6FFCCB2F8",
@@ -2538,6 +2578,7 @@
 		F7E50F631C51CD5B5DC0BC43 = {
 			buildActionMask = 2147483647;
 			files = (
+				"0FA7BADE33DA4DBD246F4124",
 				"58F0D288270463BDD94EFFD4",
 				"DCAF757D51BE79F01DD08C92",
 				"00EEC0CBE485B0943E0F85E2",
@@ -2599,6 +2640,7 @@
 				"9C3AEB9C5B0C81B03AC0A092",
 				"D08A17EE4EFF92362766BA63",
 				"1E5BF76341F1BA16F04F268C",
+				"F3FC3B67A4DDE4D00D8C0ABF",
 				"982433B80F93E107E9C92719",
 				"0117B69592B8D83B555F5967",
 				"76A7E972FABC8AE5E7849B37",

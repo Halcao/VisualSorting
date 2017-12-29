@@ -163,4 +163,12 @@ dependencies: \
   /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qrubberband.h \
   cursorposcalculator.h \
   /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QPoint \
-  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QRect
+  /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QRect \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QActionGroup \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qactiongroup.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qaction.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QAction \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QMenuBar \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qmenubar.h \
+  /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/qmenu.h \
+  aboutpage.h

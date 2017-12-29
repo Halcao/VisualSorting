@@ -27,6 +27,7 @@ public:
     int from, to;
     std::vector<int> dataSource;
     void paintEvent(QPaintEvent *event);
+    int type = 0;
 //    void drawCircle();
 //    void timerEvent(QTimerEvent *event);
 };

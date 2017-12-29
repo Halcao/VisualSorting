@@ -30,22 +30,22 @@ check: first
 
 benchmark: first
 
-compilers: moc_predefs.h moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp\
-	 moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp\
-	 moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp\
-	 moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp\
-	 moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp\
-	 moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp\
-	 moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp\
-	 moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp\
-	 moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp\
-	 moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp\
-	 moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp\
-	 moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp\
-	 moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp\
-	 moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp\
-	 moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp\
-	 moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
+compilers: moc_predefs.h moc_aboutpage.cpp moc_bubblesorter.cpp moc_frameless_helper.cpp\
+	 moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp\
+	 moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp\
+	 moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp\
+	 moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp\
+	 moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp\
+	 moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp\
+	 moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp\
+	 moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp\
+	 moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp\
+	 moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp\
+	 moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp\
+	 moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp\
+	 moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp\
+	 moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp\
+	 moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
 compiler_rcc_make_all:
 compiler_rcc_clean:
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -54,9 +54,15 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /usr/local/Cellar/qt/5.9.1/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
+compiler_moc_header_make_all: moc_aboutpage.cpp moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
+	-$(DEL_FILE) moc_aboutpage.cpp moc_bubblesorter.cpp moc_frameless_helper.cpp moc_graphicsview.cpp moc_mainwindow.cpp moc_painterpalette.cpp moc_sorter.cpp moc_qtmaterialappbar.cpp moc_qtmaterialautocomplete.cpp moc_qtmaterialautocomplete_internal.cpp moc_qtmaterialavatar.cpp moc_qtmaterialbadge.cpp moc_qtmaterialcheckbox.cpp moc_qtmaterialcircularprogress.cpp moc_qtmaterialcircularprogress_internal.cpp moc_qtmaterialdialog.cpp moc_qtmaterialdialog_internal.cpp moc_qtmaterialdrawer.cpp moc_qtmaterialdrawer_internal.cpp moc_qtmaterialfab.cpp moc_qtmaterialflatbutton.cpp moc_qtmaterialflatbutton_internal.cpp moc_qtmaterialiconbutton.cpp moc_qtmaterialmenu.cpp moc_qtmaterialprogress.cpp moc_qtmaterialprogress_internal.cpp moc_qtmaterialradiobutton.cpp moc_qtmaterialraisedbutton.cpp moc_qtmaterialscrollbar.cpp moc_qtmaterialscrollbar_internal.cpp moc_qtmaterialslider.cpp moc_qtmaterialslider_internal.cpp moc_qtmaterialsnackbar.cpp moc_qtmaterialsnackbar_internal.cpp moc_qtmaterialtabs.cpp moc_qtmaterialtabs_internal.cpp moc_qtmaterialtextfield.cpp moc_qtmaterialtextfield_internal.cpp moc_qtmaterialtoggle.cpp moc_qtmaterialtoggle_internal.cpp moc_qtmaterialcheckable.cpp moc_qtmaterialcheckable_internal.cpp moc_qtmaterialoverlaywidget.cpp moc_qtmaterialripple.cpp moc_qtmaterialrippleoverlay.cpp moc_qtmaterialstatetransition.cpp moc_qtmaterialstyle.cpp moc_qtmaterialtheme.cpp
+moc_aboutpage.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QWidget \
+		aboutpage.h \
+		moc_predefs.h \
+		/usr/local/Cellar/qt/5.9.1/bin/moc
+	/usr/local/Cellar/qt/5.9.1/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/local/Cellar/qt/5.9.1/mkspecs/macx-clang -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I'/Users/Halcao/Documents/Source Exercise/Qt/VisualSorting' -I/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/usr/local/Cellar/qt/5.9.1/lib aboutpage.h -o moc_aboutpage.cpp
+
 moc_bubblesorter.cpp: sorter.h \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QObject \
 		bubblesorter.h \
