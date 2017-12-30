@@ -15,7 +15,7 @@ void gradientArc(QPainter *painter, int radius, double startAngle, double angleL
 {
     // 渐变色
     QRadialGradient gradient(0, 0, radius);
-    gradient.setColorAt(0, QColor(0x21BACF));
+//    gradient.setColorAt(0, QColor(0x21BACF));
     gradient.setColorAt(1.0, color);
 //    QRadialGradient
     painter->setBrush(gradient);
@@ -101,7 +101,7 @@ void PainterPalette::paintEvent(QPaintEvent *event) {
         
         double interval = 360.0/dataCount;
         for(int i = 0; i < dataCount; i++) {
-            gradientArc(&painter, radius, i*interval, interval, arcHeight, QColor(rgb((double)dataSource[i]/(double)dataCount)));
+            gradientArc(&painter, radius, i*interval, interval, arcHeight, QColor(rgb((double)dataSource[i]*0.9/(double)dataCount)));
         }
     }
 }

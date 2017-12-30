@@ -127,7 +127,7 @@ desktop(new QDesktopWidget) {
     this->setWindowFlags(Qt::FramelessWindowHint);//去掉标题栏
     this->setGeometry(QRect(100, 55, 350, 250));//可设置窗口显示的方位与大小
     
-    this->setWindowOpacity(0.98);//设置透明1-全体透明
+    this->setWindowOpacity(0.95);//设置透明1-全体透明
     this->setAttribute(Qt::WA_TranslucentBackground, true);//设置透明2-窗体标题栏不透明,背景透明
     this->setMinimumSize(sizeHint());
 //    this->resize(300,300);//显示大小
